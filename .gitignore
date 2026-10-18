@@ -1,0 +1,8 @@
+# Only server/, web/, package.json and docs are needed to deploy.
+tools/
+build/
+src/
+.claude/
+/*.swf
+/*.xml
+node_modules/

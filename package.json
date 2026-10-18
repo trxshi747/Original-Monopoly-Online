@@ -1,0 +1,12 @@
+{
+  "name": "monopoly-online",
+  "version": "1.0.0",
+  "description": "Online multiplayer relay for Monopoly Classic (Ruffle)",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

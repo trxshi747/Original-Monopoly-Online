@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monopoly Online</title>
+<style>
+  :root { --bg:#0f2a24; --card:#16382f; --ink:#f3efe0; --muted:#9fb8ae; --accent:#e8b923; --bad:#ff8a7a; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; background:var(--bg); color:var(--ink); font:16px/1.4 system-ui,Segoe UI,Arial,sans-serif; display:flex; align-items:center; justify-content:center; }
+  #game { position:fixed; inset:0; background:#000; display:none; }
+  #lobby { width:min(440px,92vw); background:var(--card); border-radius:14px; padding:28px; box-shadow:0 10px 40px #0008; }
+  h1 { margin:0 0 4px; font-size:28px; letter-spacing:.5px; color:var(--accent); }
+  p.sub { margin:0 0 20px; color:var(--muted); }
+  label { display:block; margin:14px 0 4px; font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:.8px; }
+  input, select { width:100%; padding:11px 12px; border-radius:8px; border:1px solid #2c5a4d; background:#0f2a24; color:var(--ink); font-size:16px; }
+  button { width:100%; margin-top:20px; padding:13px; border:0; border-radius:8px; background:var(--accent); color:#2a2000; font-weight:700; font-size:16px; cursor:pointer; }
+  button:disabled { opacity:.45; cursor:default; }
+  button.ghost { background:transparent; color:var(--ink); border:1px solid #2c5a4d; margin-top:10px; }
+  #err { color:var(--bad); min-height:1.3em; margin-top:12px; font-size:14px; }
+  ul { list-style:none; margin:14px 0 0; padding:0; }
+  li { display:flex; align-items:center; gap:10px; padding:10px 12px; margin-bottom:6px; background:#0f2a24; border-radius:8px; }
+  li .seat { width:24px; height:24px; border-radius:50%; background:var(--accent); color:#2a2000; font-weight:700; display:grid; place-items:center; font-size:13px; }
+  li .tok { margin-left:auto; color:var(--muted); font-size:13px; }
+  .hidden { display:none !important; }
+  .code { font-size:30px; letter-spacing:6px; color:var(--accent); font-weight:700; text-align:center; margin:6px 0; }
+  .hint { color:var(--muted); font-size:14px; text-align:center; }
+</style>
+</head>
+<body>
+<div id="game"></div>
+
+<div id="lobby">
+  <h1>Monopoly Online</h1>
+
+  <div id="rejoinBox" class="hidden">
+    <p class="sub">You have a game in progress in room <b id="rjRoom"></b> as <b id="rjName"></b>.</p>
+    <button id="rejoinBtn">Rejoin game</button>
+    <button class="ghost" id="forgetBtn">Forget it, join another</button>
+  </div>
+
+  <div id="joinView">
+    <p class="sub">Play with friends. Everyone opens this page and joins the same room code.</p>
+    <label for="name">Your name</label>
+    <input id="name" maxlength="16" autocomplete="off">
+    <label for="room">Room code</label>
+    <input id="room" maxlength="12" autocomplete="off" placeholder="e.g. ABCD">
+    <label for="token">Token</label>
+    <select id="token"></select>
+    <button id="joinBtn">Join / create room</button>
+    <div id="err"></div>
+  </div>
+
+  <div id="waitView" class="hidden">
+    <p class="sub">Room code — share it (or the link) with your friends:</p>
+    <div class="code" id="codeShow"></div>
+    <button class="ghost" id="copyBtn">Copy invite link</button>
+    <ul id="players"></ul>
+    <button id="startBtn" class="hidden">Start game</button>
+    <p class="hint" id="waitHint"></p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle@0.7.1/ruffle.js"></script>
+<script>
+const TOKENS = ['Wheelbarrow','Shoe','Car','Dog','Top hat','Iron','Ship','Thimble'];
+const $ = (id) => document.getElementById(id);
+let room = '', seat = -1, pollTimer = null, launched = false;
+
+TOKENS.forEach((t, i) => { const o = document.createElement('option'); o.value = i; o.textContent = t; $('token').appendChild(o); });
+try { $('name').value = localStorage.getItem('mono_name') || ''; } catch (e) {}
+const qRoom = new URLSearchParams(location.search).get('room');
+$('room').value = (qRoom || Math.random().toString(36).slice(2, 6)).toUpperCase();
+
+async function post(url) {
+  const r = await fetch(url, { method: 'POST', cache: 'no-store' });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || 'request failed');
+  return j;
+}
+
+$('joinBtn').onclick = async () => {
+  $('err').textContent = '';
+  room = $('room').value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+  const name = $('name').value.trim();
+  if (!room) { $('err').textContent = 'Enter a room code.'; return; }
+  if (!name) { $('err').textContent = 'Enter your name.'; return; }
+  try { localStorage.setItem('mono_name', name); } catch (e) {}
+  try {
+    const v = await post('api/join?room=' + room + '&name=' + encodeURIComponent(name) + '&token=' + $('token').value);
+    seat = v.seat;
+    $('joinView').classList.add('hidden');
+    $('waitView').classList.remove('hidden');
+    $('codeShow').textContent = room;
+    render(v);
+    pollTimer = setInterval(refresh, 1000);
+  } catch (e) { $('err').textContent = e.message; }
+};
+
+$('copyBtn').onclick = () => {
+  const link = location.origin + location.pathname + '?room=' + room;
+  (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(
+    () => { $('copyBtn').textContent = 'Copied!'; setTimeout(() => $('copyBtn').textContent = 'Copy invite link', 1500); },
+    () => prompt('Copy this link:', link));
+};
+
+$('startBtn').onclick = async () => {
+  try { render(await post('api/start?room=' + room + '&seat=' + seat)); } catch (e) { $('waitHint').textContent = e.message; }
+};
+
+async function refresh() {
+  try {
+    const r = await fetch('api/lobby?room=' + room + '&seat=' + seat, { cache: 'no-store' });
+    if (r.ok) render(await r.json());
+  } catch (e) {}
+}
+
+function render(v) {
+  const ul = $('players');
+  ul.innerHTML = '';
+  v.players.forEach((p, i) => {
+    const li = document.createElement('li');
+    li.innerHTML = '<span class="seat"></span><span class="n"></span><span class="tok"></span>';
+    li.children[0].textContent = i + 1;
+    li.children[1].textContent = p.name + (i === seat ? ' (you)' : '') + (i === 0 ? ' — host' : '');
+    li.children[2].textContent = TOKENS[p.token];
+    ul.appendChild(li);
+  });
+  const isHost = seat === 0;
+  $('startBtn').classList.toggle('hidden', !isHost);
+  $('startBtn').disabled = v.players.length < 2;
+  $('waitHint').textContent = isHost
+    ? (v.players.length < 2 ? 'Waiting for at least one more player…' : 'Everyone here? Press Start.')
+    : 'Waiting for the host to start…';
+  if (v.started && !launched) launch(v);
+}
+
+function launch(v, rejoin) {
+  launched = true;
+  try { localStorage.setItem("mono_session", JSON.stringify({ room: room, seat: seat })); } catch (e) {}
+  clearInterval(pollTimer);
+  $('lobby').classList.add('hidden');
+  const g = $('game');
+  g.style.display = 'block';
+  const player = window.RufflePlayer.newest().createPlayer();
+  player.style.width = '100%';
+  player.style.height = '100%';
+  g.appendChild(player);
+  player.load({
+    url: 'game.swf',
+    allowScriptAccess: true,
+    autoplay: 'on',
+    scale: 'showAll',
+    forceScale: true,
+    letterbox: 'on',
+    unmuteOverlay: 'hidden',
+    parameters: {
+      room: room,
+      rejoin: rejoin ? "1" : "0",
+      seat: String(seat),
+      n: String(v.players.length),
+      seed: String(v.seed),
+      names: JSON.stringify(v.players.map((p) => p.name)),
+      tokens: JSON.stringify(v.players.map((p) => p.token)),
+    },
+  });
+}
+
+// ---- rejoin an unfinished game after a refresh or dropped connection ----
+(async function checkSession() {
+  let sess = null;
+  try { sess = JSON.parse(localStorage.getItem('mono_session') || 'null'); } catch (e) {}
+  if (!sess || !sess.room || !(sess.seat >= 0)) return;
+  try {
+    const r = await fetch('api/lobby?room=' + sess.room + '&seat=' + sess.seat, { cache: 'no-store' });
+    if (!r.ok) throw new Error('gone');
+    const v = await r.json();
+    if (!v.started || !v.players[sess.seat]) throw new Error('not started');
+    $('rjRoom').textContent = sess.room;
+    $('rjName').textContent = v.players[sess.seat].name;
+    $('rejoinBox').classList.remove('hidden');
+    $('joinView').classList.add('hidden');
+    $('rejoinBtn').onclick = () => { room = sess.room; seat = sess.seat; $('rejoinBox').classList.add('hidden'); launch(v, true); };
+    $('forgetBtn').onclick = () => {
+      try { localStorage.removeItem('mono_session'); } catch (e) {}
+      $('rejoinBox').classList.add('hidden');
+      $('joinView').classList.remove('hidden');
+    };
+  } catch (e) {
+    try { localStorage.removeItem('mono_session'); } catch (e2) {}
+  }
+})();
+</script>
+</body>
+</html>

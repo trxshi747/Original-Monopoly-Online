@@ -1,0 +1,1251 @@
+<!-- Gamehouse API build. Original was 1.13.0 -->
+<monopolygame>
+	<settings
+		enablecheats='false'
+		usenetwork='false'
+		showmem='false'
+		showfps='false'
+		showrev='false'
+		assetpath="assets/"
+		version='1.14.0'
+		autoSaveCount='false'
+		upsellURL="http://puzzle-games.pogo.com/offergrid/benefits.do?intcmp=cp_upsellpg_new_learnmore"
+	/>
+	<tweakables>
+		<!-- The amount of money that the players start a new game with -->
+		<StartingMoney>1500</StartingMoney>
+		<!-- The amount of time the Go dialog stays up in seconds -->
+		<GODialogTime>3</GODialogTime>
+		<!-- The amount of time the Rent dialog stays up in seconds -->
+		<RentDialogTime>3</RentDialogTime>
+		<!-- The amount of money to give or take away with the money cheats -->
+		<CheatCashAmount>100</CheatCashAmount>
+		
+		<!-- The bonus score from getting in first place -->
+		<PlaceBonus1>30</PlaceBonus1>
+		<!-- The bonus score from getting in second place -->
+		<PlaceBonus2>25</PlaceBonus2>
+		<!-- The bonus score from getting in thrid place -->
+		<PlaceBonus3>20</PlaceBonus3>
+		<!-- The bonus score from getting in fourth place -->
+		<PlaceBonus4>15</PlaceBonus4>
+		
+		<!-- The bonus score for each double rolled -->
+		<DoublesMasterBonus>10</DoublesMasterBonus>	
+		
+		<!-- Divisors for converting score into tokens -->
+		<ScoreTokenDivisor>2</ScoreTokenDivisor>
+		<PlaceScoreTokenDivisor>2</PlaceScoreTokenDivisor>
+		<DoubleScoreTokenDivisor>2</DoubleScoreTokenDivisor>
+		
+		<!-- The number of seconds the game must remain idle without user interaction before the game auto saves. -->
+		<IdleAutoSaveTime>180</IdleAutoSaveTime>
+		
+	</tweakables>
+
+	<tips>
+		<tip>IDS_ROLLUP_TIP1</tip>
+		<tip>IDS_ROLLUP_TIP2</tip>
+		<tip>IDS_ROLLUP_TIP3</tip>
+		<tip>IDS_ROLLUP_TIP4</tip>
+		<tip>IDS_ROLLUP_TIP5</tip>
+		<tip>IDS_ROLLUP_TIP6</tip>
+	</tips>
+	
+	<tokens>
+		<token instName="TokenCar" free="true" rank="0" />
+		<token instName="TokenShip" free="true" rank="0" />
+		<token instName="TokenTopHat" free="true" rank="0" />
+		<token instName="TokenDog" free="true" rank="0" />
+		<token instName="TokenShoe" free="true" rank="0" />
+		
+		<token instName="TokenIron" free="false" rank="0" />
+		<token instName="TokenWheelbarrow" free="false" rank="0" />
+		<token instName="TokenThimble" free="false" rank="0" />
+		<token instName="TokenNascar" free="false" rank="0" />
+		<token instName="TokenSumo" free="false" rank="0" />
+	</tokens>
+	
+	<gamelayout>
+		<!-- The location of the game board in the game. -->
+		<BoardLocation x="5" y="5" />
+		<!-- The location of the player panels area 
+			xOffset is the number of pixels from the game board.
+			-->
+		<PanelLocation xOffset="-2" y="5" />
+	</gamelayout>
+	
+	<ai>
+		<personality name="DimondJim" level="0">
+			<DesirabilityTable>1.0,1.0,1.0,1.0,1.25,1.0,1.5,1.5,1.5,1.0</DesirabilityTable>
+			<Availability2Properties>1.25,2.5,1.25</Availability2Properties>
+			<Availability3Properties>1.125,1.0,1.0,1.5,1.125,2.5,1.5</Availability3Properties>
+			<AvailabilityRR>1.25,1.125,1.0,1.0,1.5,1.25,1.125,2.0,1.75,3.0,1.0</AvailabilityRR>
+			
+			<!-- If true the AI will not move into the Accelerated phase until all three of the following tests are true-->
+			<PhaseAccelerated_Pass_All_Tests>true</PhaseAccelerated_Pass_All_Tests>
+			<!-- The number of properties sold on the board -->
+			<PhaseAccelerated_NumPropsSold>20</PhaseAccelerated_NumPropsSold>
+			<!-- The number of monopolies formed on the board.  This is monopolies for every player -->
+			<PhaseAccelerated_NumMonopolies>1</PhaseAccelerated_NumMonopolies>
+			<!-- The number of rolls that have been done by all players -->
+			<PhaseAccelerated_NumRolls>15</PhaseAccelerated_NumRolls>
+		
+			<!-- When all of the following three tests are true the AI will move in the the Game End phase. -->
+			<!-- If true we use the TCA test-->
+			<PhaseGameEnd_UseTCATest>false</PhaseGameEnd_UseTCATest>
+			<!-- The minimum housing level on all monopolies owned by this player.-->
+			<PhaseGameEnd_MinHousing>0</PhaseGameEnd_MinHousing>
+			<!-- The minimum number of monopolies owned by this player.-->
+			<PhaseGameEnd_NumMonopolies>4</PhaseGameEnd_NumMonopolies>
+			
+			<!-- The number of monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinMonopolies>9</RailraodReducedDesirablility_MinMonopolies>
+			<!-- The number of developed monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinHousing>9</RailraodReducedDesirablility_MinHousing>
+			<!-- The reduced rail road desirability.  Both of the above minimums must be met for this to take effect -->
+			<RailraodReducedDesirablility>0</RailraodReducedDesirablility>
+			
+			<CashReserve>200</CashReserve>
+			
+			<TradeLiquidityThreshold>3.75</TradeLiquidityThreshold>
+			
+			<TradeSecondaryLiquidityThreshold>4.5</TradeSecondaryLiquidityThreshold>
+			
+			<!-- If true the AI will take into account all properties from their location to go when calculating the conservative cash amount -->
+			<CanLookAheadToGo>true</CanLookAheadToGo>
+			
+			<!-- Random chance of player seeking a trade each turn, by phase -->
+			<TradeOdds>0.2,0.5,0.5</TradeOdds>
+			
+			<!-- The number of turns to wait until trying to trade for a purchased property -->
+			<TradeTurnsToWait>2</TradeTurnsToWait>
+			
+			<!-- Determining target property for a trade.
+				# Random roll to determine which property to go after.
+				# 3 double values, must add up to 1.0
+				# [ Chance to seek target with highest Property Coefficient,
+				#   Chance to seek target with 2nd highest Property Coefficient,
+				#   Chance to seek target with 3rd highest Property Coefficient-->
+			<TradeSeekOdds>1.0,0.0,0.0</TradeSeekOdds>
+			
+			<!-- Chance to use the lowest PC value for a Trade Value -->
+			<TradeLowestPCChance>0</TradeLowestPCChance>
+			
+			<!-- The TradeDealChance_* properties control the type of deal sought for based on the current AI phase, the number of times a property has been offered, and random chance -->
+			<!-- [Pay more, Pay normal, Pay less] -->
+			<TradeDealChance_Initial0>0.0,0.8,0.2</TradeDealChance_Initial0>
+			<TradeDealChance_Initial1>0.2,0.8,0.0</TradeDealChance_Initial1>
+			<TradeDealChance_Initial2>0.8,0.2,0.0</TradeDealChance_Initial2>
+			<TradeDealChance_Initial3>0.0,0.0,0.0</TradeDealChance_Initial3>
+			
+			<TradeDealChance_Accelerated0>0.2,0.8,0.0</TradeDealChance_Accelerated0>
+			<TradeDealChance_Accelerated1>0.5,0.5,0.0</TradeDealChance_Accelerated1>
+			<TradeDealChance_Accelerated2>0.9,0.1,0.0</TradeDealChance_Accelerated2>
+			<TradeDealChance_Accelerated3>0.6,0.2,0.0</TradeDealChance_Accelerated3>
+			
+			<TradeDealChance_EndGame0>0.1,0.4,0.5</TradeDealChance_EndGame0>
+			<TradeDealChance_EndGame1>0.1,0.5,0.4</TradeDealChance_EndGame1>
+			<TradeDealChance_EndGame2>0.2,0.6,0.2</TradeDealChance_EndGame2>
+			<TradeDealChance_EndGame3>0.0,0.0,0.0</TradeDealChance_EndGame3>
+			
+			<!-- Whether to trade cash or a bait property for a target property -->
+			<TradeCashOrProp>1.0</TradeCashOrProp>
+			
+			<!-- -->
+			<TradeCashPCThreshold>0.0</TradeCashPCThreshold>
+			<!-- The minimum cash the trade partner must have to trade for cash -->
+			<TradeMinCashOnHand>0</TradeMinCashOnHand>
+			<TradeNoCashUndevelopedMonopoly>false</TradeNoCashUndevelopedMonopoly>
+			<TradeCashForBetterMonopoly>false</TradeCashForBetterMonopoly>
+
+			<!-- Rules for trading away property -->
+			<TradeTargetPropPCThreshold>0</TradeTargetPropPCThreshold>
+			
+			<!-- Trade prop for prop? -->
+			<TradePropForProp>true</TradePropForProp>
+			
+			<!-- Trade prop for prop if bait PC is less than -->
+			<TradeBaitPCThreshold>0</TradeBaitPCThreshold>
+			
+			<!-- # Random roll to determine which property to trade.
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Chance to trade property with lowest Property Coefficient,
+				#   Chance to trade property with 2nd lowest Property Coefficient,
+				#   Chance to trade property with 3rd lowest Property Coefficient]-->
+			<TradePropChoiceRatios>1.0,0.0,0.0</TradePropChoiceRatios>			
+			
+			<!-- # Random roll to determine base amount of cash to ask for
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Use trading partner's PC to determine Real Value,
+				#   Use current player's PC to determine Real Value,
+				#   Use highest of the PC's involved in the trade ]	-->
+			<TradeCashChoiceRatios>1.0,0.0,0.0</TradeCashChoiceRatios>
+			
+			<!-- Determines the highest level the AI will build on any monopoly.  0 - None, 1 - A house, 2 - Two houses, 3 - Three houses, 4 - Four houses, 5 - Hotels -->
+			<BuildImprovementLevelMax>5</BuildImprovementLevelMax>
+		
+			<!-- Determines what the AI will use for the build allowance.  0 - Cash on Hand, 1 - Base Liquidaty, 2 - Secondary Liquidity-->
+			<BuildAllowanceType>1</BuildAllowanceType>
+			<!--If true the AI will consider how much they may have to pay in rent when deciding how much they can afford to spend on building -->
+			<BuildAllowanceUseSpatialAnalysis>false</BuildAllowanceUseSpatialAnalysis>
+			
+			<!--If true the AI will consider where the other players are when choosing where to build a monopoly.-->
+			<BuildUseSpatialAnalysis>true</BuildUseSpatialAnalysis>
+			
+			<!-- If true the AI will attempt to build a bunch of houses on a monopoly all at once.-->
+			<BuildInBatches>false</BuildInBatches>
+			
+			<!-- The number of houses that are left before the AI will attempt to cause a housing shortgage-->
+			<BuildCreateShortageThreshhold>0</BuildCreateShortageThreshhold>
+			<!-- If true the AI will attempt to deal with housing shortages-->
+			<BuildManageHousingShortgage>false</BuildManageHousingShortgage>
+			
+			<!-- A common seperated list of the raise cash priorities. -->
+			<!-- 0 - Mortage Non Monopoly Properties -->
+			<!-- 1 - Mortgage Monopoly Properties -->
+			<!-- 2 - Sell housing greater than the build level -->
+			<!-- 3 - Sell housing less than the build level -->
+			<!-- 4 - Sell housing equal to the build level -->
+			<RaiseCashPriorities>0,1,3,4,1</RaiseCashPriorities>
+			
+			<!-- Determines how the AI figures out how much cash it has available for unmortgaging -->
+			<!-- 0 - Consider the cash available -->
+			<!-- 1 - Consider the rent to go -->
+			<!-- 2 - Spatialy condiser rent -->
+			<UnmortgageBehaviour>2</UnmortgageBehaviour>
+
+			<!-- Buy property Behavior -->
+			<BuyBehaviourUseCCA>true</BuyBehaviourUseCCA>
+			
+			<!-- Applies only if the above is false -->
+			<BuyBehaviourTCAThreshold>0</BuyBehaviourTCAThreshold>
+			
+			<!-- # Auction Behavior
+				# Random roll to determine the auction value
+				# 3 double values, must add up to 1.0
+				# [ Low, Fair, High ] -->
+			<AuctionPercentageTable>0.1,0.8,0.1</AuctionPercentageTable>
+			<!-- Determination in whether to use TCA or CCA, based on PC -->
+			<AuctionTCAThreshold>3.5</AuctionTCAThreshold>
+
+			<!-- Determines what the AI will do when they are in jail.  0 - Always Pay out, 1 - Stay in Jail if there are no properties left to buy, 2 - Stay in jail if an oponent has a developed monopoly -->
+			<JailBehaviour>2</JailBehaviour>
+
+			
+			<!-- The Following properties are the delay times for when the AI will respond to a dialog -->
+			<RollDialogTime>2</RollDialogTime>
+			<EndTurnDialogTime>2</EndTurnDialogTime>
+			<BuyDialogTime>2</BuyDialogTime>
+			<JailDialogTime>2</JailDialogTime>
+			<AuctionDialogTime>2</AuctionDialogTime>
+			<TradeDialogTime>2</TradeDialogTime>
+			<BuildDialogTime>0.5</BuildDialogTime>
+			<SellDailogTime>0.5</SellDailogTime>
+			<RaiseCashChoiceTime>1.5</RaiseCashChoiceTime>
+			<DialogTime>3</DialogTime>
+			
+			<!-- Counter Offers -->
+			<!-- Ask for cash -->
+			<CounterCashAskValue>100</CounterCashAskValue>
+			<CounterCashAskPropChance>0.10</CounterCashAskPropChance>
+
+			<!-- Ask for property -->
+			<CounterPropAskChance>0.0</CounterPropAskChance>
+
+			<!-- Offer property -->
+			<CounterBaitOfferBaitPCThreshold>0.0</CounterBaitOfferBaitPCThreshold>
+			<CounterBaitOfferBaitPCGreaterForPartner>false</CounterBaitOfferBaitPCGreaterForPartner>
+			<CounterBaitOfferChance>0.0</CounterBaitOfferChance>
+			
+		</personality>
+		
+		<personality name="PenyWise" level="0">
+			<DesirabilityTable>2.0,1.5,1.0,1.0,1.0,1.0,1.0,1.0,1.25,1.25</DesirabilityTable>
+			<Availability2Properties>1.25,2.0,1.25</Availability2Properties>
+			<Availability3Properties>1.125,1.0,1.0,1.5,1.0,3.0,1.5</Availability3Properties>
+			<AvailabilityRR>1.25,1.0,1.0,1.0,1.5,1.25,1.125,2.0,1.75,3.0,1.0</AvailabilityRR>
+			
+			<!-- If true the AI will not move into the Accelerated phase until all three of the following tests are true-->
+			<PhaseAccelerated_Pass_All_Tests>true</PhaseAccelerated_Pass_All_Tests>
+			<!-- The number of properties sold on the board -->
+			<PhaseAccelerated_NumPropsSold>22</PhaseAccelerated_NumPropsSold>
+			<!-- The number of monopolies formed on the board.  This is monopolies for every player -->
+			<PhaseAccelerated_NumMonopolies>1</PhaseAccelerated_NumMonopolies>
+			<!-- The number of rolls that have been done by all players -->
+			<PhaseAccelerated_NumRolls>15</PhaseAccelerated_NumRolls>
+		
+			<!-- When all of the following three tests are true the AI will move in the the Game End phase. -->
+			<!-- If true we use the TCA test-->
+			<PhaseGameEnd_UseTCATest>true</PhaseGameEnd_UseTCATest>
+			<!-- The minimum housing level on all monopolies owned by this player.-->
+			<PhaseGameEnd_MinHousing>3</PhaseGameEnd_MinHousing>
+			<!-- The minimum number of monopolies owned by this player.-->
+			<PhaseGameEnd_NumMonopolies>2</PhaseGameEnd_NumMonopolies>
+			
+			<!-- The number of monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinMonopolies>2</RailraodReducedDesirablility_MinMonopolies>
+			<!-- The number of developed monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinHousing>4</RailraodReducedDesirablility_MinHousing>
+			<!-- The reduced rail road desirability.  Both of the above minimums must be met for this to take effect -->
+			<RailraodReducedDesirablility>1.0</RailraodReducedDesirablility>
+			
+			<CashReserve>200</CashReserve>
+			
+			<TradeLiquidityThreshold>2.5</TradeLiquidityThreshold>
+			
+			<TradeSecondaryLiquidityThreshold>3.75</TradeSecondaryLiquidityThreshold>
+			
+			<!-- If true the AI will take into account all properties from their location to go when calculating the conservative cash amount -->
+			<CanLookAheadToGo>true</CanLookAheadToGo>
+			
+			<!-- Random chance of player seeking a trade each turn, by phase -->
+			<TradeOdds>0.33,0.67,0.50</TradeOdds>
+			
+			<!-- The number of turns to wait until trying to trade for a purchased property -->
+			<TradeTurnsToWait>2</TradeTurnsToWait>
+			
+			<!-- Determining target property for a trade.
+				# Random roll to determine which property to go after.
+				# 3 double values, must add up to 1.0
+				# [ Chance to seek target with highest Property Coefficient,
+				#   Chance to seek target with 2nd highest Property Coefficient,
+				#   Chance to seek target with 3rd highest Property Coefficient-->
+			<TradeSeekOdds>1.0,0.0,0.0</TradeSeekOdds>
+			
+			<!-- Chance to use the lowest PC value for a Trade Value -->
+			<TradeLowestPCChance>0</TradeLowestPCChance>
+			
+			<!-- The TradeDealChance_* properties control the type of deal sought for based on the current AI phase, the number of times a property has been offered, and random chance -->
+			<!-- [Pay more, Pay normal, Pay less] -->
+			<TradeDealChance_Initial0>0.0,0.7,0.3</TradeDealChance_Initial0>
+			<TradeDealChance_Initial1>0.2,0.6,0.2</TradeDealChance_Initial1>
+			<TradeDealChance_Initial2>0.6,0.4,0.0</TradeDealChance_Initial2>
+			<TradeDealChance_Initial3>0.0,0.0,0.0</TradeDealChance_Initial3>
+			
+			<TradeDealChance_Accelerated0>0.3,0.6,0.1</TradeDealChance_Accelerated0>
+			<TradeDealChance_Accelerated1>0.4,0.6,0.0</TradeDealChance_Accelerated1>
+			<TradeDealChance_Accelerated2>0.8,0.2,0.0</TradeDealChance_Accelerated2>
+			<TradeDealChance_Accelerated3>0.0,0.0,0.0</TradeDealChance_Accelerated3>
+			
+			<TradeDealChance_EndGame0>0.1,0.3,0.6</TradeDealChance_EndGame0>
+			<TradeDealChance_EndGame1>0.2,0.4,0.4</TradeDealChance_EndGame1>
+			<TradeDealChance_EndGame2>0.4,0.4,0.2</TradeDealChance_EndGame2>
+			<TradeDealChance_EndGame3>0.0,0.0,0.0</TradeDealChance_EndGame3>
+			
+			<!-- Whether to trade cash or a bait property for a target property -->
+			<TradeCashOrProp>1.0</TradeCashOrProp>
+			<TradeCashPCThreshold>0.0</TradeCashPCThreshold>
+			<!-- The minimum cash the trade partner must have to trade for cash -->
+			<TradeMinCashOnHand>0</TradeMinCashOnHand>
+			<TradeNoCashUndevelopedMonopoly>false</TradeNoCashUndevelopedMonopoly>
+			<TradeCashForBetterMonopoly>false</TradeCashForBetterMonopoly>
+
+			<!-- Rules for trading away property -->
+			<TradeTargetPropPCThreshold>0</TradeTargetPropPCThreshold>
+			
+			<!-- Trade prop for prop? -->
+			<TradePropForProp>true</TradePropForProp>
+			
+			<!-- Trade prop for prop if bait PC is less than -->
+			<TradeBaitPCThreshold>0</TradeBaitPCThreshold>
+			
+			<!-- # Random roll to determine which property to trade.
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Chance to trade property with lowest Property Coefficient,
+				#   Chance to trade property with 2nd lowest Property Coefficient,
+				#   Chance to trade property with 3rd lowest Property Coefficient]-->
+			<TradePropChoiceRatios>1.0,0.0,0.0</TradePropChoiceRatios>			
+			
+			<!-- # Random roll to determine base amount of cash to ask for
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Use trading partner's PC to determine Real Value,
+				#   Use current player's PC to determine Real Value,
+				#   Use highest of the PC's involved in the trade ]	-->
+			<TradeCashChoiceRatios>1.0,0.0,0.0</TradeCashChoiceRatios>
+			
+			<!-- Determines the highest level the AI will build on any monopoly.  0 - None, 1 - A house, 2 - Two houses, 3 - Three houses, 4 - Four houses, 5 - Hotels -->
+			<BuildImprovementLevelMax>3</BuildImprovementLevelMax>
+		
+			<!-- Determines what the AI will use for the build allowance.  0 - Cash on Hand, 1 - Base Liquidaty, 2 - Secondary Liquidity-->
+			<BuildAllowanceType>0</BuildAllowanceType>
+			<!--If true the AI will consider how much they may have to pay in rent when deciding how much they can afford to spend on building -->
+			<BuildAllowanceUseSpatialAnalysis>false</BuildAllowanceUseSpatialAnalysis>
+			
+			<!--If true the AI will consider where the other players are when choosing where to build a monopoly.-->
+			<BuildUseSpatialAnalysis>false</BuildUseSpatialAnalysis>
+			
+			<!-- If true the AI will attempt to build a bunch of houses on a monopoly all at once.-->
+			<BuildInBatches>true</BuildInBatches>
+			
+			<!-- The number of houses that are left before the AI will attempt to cause a housing shortgage-->
+			<BuildCreateShortageThreshhold>0</BuildCreateShortageThreshhold>
+			<!-- If true the AI will attempt to deal with housing shortages-->
+			<BuildManageHousingShortgage>false</BuildManageHousingShortgage>
+			
+			<!-- A common seperated list of the raise cash priorities. -->
+			<!-- 0 - Mortage Non Monopoly Properties -->
+			<!-- 1 - Mortgage Monopoly Properties -->
+			<!-- 2 - Sell housing greater than the build level -->
+			<!-- 3 - Sell housing less than the build level -->
+			<!-- 4 - Sell housing equal to the build level -->
+			<RaiseCashPriorities>0,1,3,2,4,1</RaiseCashPriorities>
+			
+			<!-- Determines how the AI figures out how much cash it has available for unmortgaging -->
+			<!-- 0 - Consider the cash available -->
+			<!-- 1 - Consider the rent to go -->
+			<!-- 2 - Spatialy condiser rent -->
+			<UnmortgageBehaviour>1</UnmortgageBehaviour>
+
+			<!-- Buy property Behavior -->
+			<BuyBehaviourUseCCA>true</BuyBehaviourUseCCA>
+			
+			<!-- Applies only if the above is false -->
+			<BuyBehaviourTCAThreshold>0</BuyBehaviourTCAThreshold>
+			
+			<!-- # Auction Behavior
+				# Random roll to determine the auction value
+				# 3 double values, must add up to 1.0
+				# [ Low, Fair, High ] -->
+			<AuctionPercentageTable>0.4,0.5,0.1</AuctionPercentageTable>
+			<!-- Determination in whether to use TCA or CCA, based on PC -->
+			<AuctionTCAThreshold>4.5</AuctionTCAThreshold>
+
+			<!-- Determines what the AI will do when they are in jail.  0 - Always Pay out, 1 - Stay in Jail if there are no properties left to buy, 2 - Stay in jail if an oponent has a developed monopoly -->
+			<JailBehaviour>2</JailBehaviour>
+
+			
+			<!-- The Following properties are the delay times for when the AI will respond to a dialog -->
+			<RollDialogTime>2</RollDialogTime>
+			<EndTurnDialogTime>2</EndTurnDialogTime>
+			<BuyDialogTime>2</BuyDialogTime>
+			<JailDialogTime>2</JailDialogTime>
+			<AuctionDialogTime>2</AuctionDialogTime>
+			<TradeDialogTime>2</TradeDialogTime>
+			<BuildDialogTime>0.5</BuildDialogTime>
+			<SellDailogTime>0.5</SellDailogTime>
+			<RaiseCashChoiceTime>1.5</RaiseCashChoiceTime>
+			<DialogTime>3</DialogTime>
+			
+			<!-- Counter Offers -->
+			<!-- Ask for cash -->
+			<CounterCashAskValue>100</CounterCashAskValue>
+			<CounterCashAskPropChance>0.25</CounterCashAskPropChance>
+
+			<!-- Ask for property -->
+			<CounterPropAskChance>0.0</CounterPropAskChance>
+
+			<!-- Offer property -->
+			<CounterBaitOfferBaitPCThreshold>0.0</CounterBaitOfferBaitPCThreshold>
+			<CounterBaitOfferBaitPCGreaterForPartner>false</CounterBaitOfferBaitPCGreaterForPartner>
+			<CounterBaitOfferChance>0.0</CounterBaitOfferChance>
+			
+		</personality>
+		
+		<personality name="ConnieCashola" level="1">
+			
+			<DesirabilityTable>1.0,1.0,1.5,1.25,1.0,1.5,1.0,1.0,1.0,1.5</DesirabilityTable>
+			<Availability2Properties>1.25,2.5,1.5</Availability2Properties>
+			<Availability3Properties>1.125,1.0,0.5,1.5,1.125,3.5,2.5</Availability3Properties>
+			<AvailabilityRR>1.125,1.0,0.5,0.25,1.25,1.125,1.0,2.0,1.5,2.5,1.5</AvailabilityRR>
+			
+			<!-- If true the AI will not move into the Accelerated phase until all three of the following tests are true-->
+			<PhaseAccelerated_Pass_All_Tests>true</PhaseAccelerated_Pass_All_Tests>
+			<!-- The number of properties sold on the board -->
+			<PhaseAccelerated_NumPropsSold>20</PhaseAccelerated_NumPropsSold>
+			<!-- The number of monopolies formed on the board.  This is monopolies for every player -->
+			<PhaseAccelerated_NumMonopolies>1</PhaseAccelerated_NumMonopolies>
+			<!-- The number of rolls that have been done by all players -->
+			<PhaseAccelerated_NumRolls>15</PhaseAccelerated_NumRolls>
+		
+			<!-- When all of the following three tests are true the AI will move in the the Game End phase. -->
+			<!-- If true we use the TCA test-->
+			<PhaseGameEnd_UseTCATest>true</PhaseGameEnd_UseTCATest>
+			<!-- The minimum housing level on all monopolies owned by this player.-->
+			<PhaseGameEnd_MinHousing>3</PhaseGameEnd_MinHousing>
+			<!-- The minimum number of monopolies owned by this player.-->
+			<PhaseGameEnd_NumMonopolies>2</PhaseGameEnd_NumMonopolies>
+			
+			<!-- The number of monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinMonopolies>2</RailraodReducedDesirablility_MinMonopolies>
+			<!-- The number of developed monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinHousing>3</RailraodReducedDesirablility_MinHousing>
+			<!-- The reduced rail road desirability.  Both of the above minimums must be met for this to take effect -->
+			<RailraodReducedDesirablility>1.25</RailraodReducedDesirablility>
+			
+			<CashReserve>150</CashReserve>
+			
+			<TradeLiquidityThreshold>3</TradeLiquidityThreshold>
+			
+			<TradeSecondaryLiquidityThreshold>3.75</TradeSecondaryLiquidityThreshold>
+			
+			<!-- If true the AI will take into account all properties from their location to go when calculating the conservative cash amount -->
+			<CanLookAheadToGo>true</CanLookAheadToGo>
+			
+			<!-- Random chance of player seeking a trade each turn, by phase -->
+			<TradeOdds>0.40,0.60,0.50</TradeOdds>
+			
+			<!-- The number of turns to wait until trying to trade for a purchased property -->
+			<TradeTurnsToWait>2</TradeTurnsToWait>
+			
+			<!-- Determining target property for a trade.
+				# Random roll to determine which property to go after.
+				# 3 double values, must add up to 1.0
+				# [ Chance to seek target with highest Property Coefficient,
+				#   Chance to seek target with 2nd highest Property Coefficient,
+				#   Chance to seek target with 3rd highest Property Coefficient-->
+			<TradeSeekOdds>0.8,0.2,0.0</TradeSeekOdds>
+			
+			<!-- Chance to use the lowest PC value for a Trade Value -->
+			<TradeLowestPCChance>0</TradeLowestPCChance>
+			
+			<!-- The TradeDealChance_* properties control the type of deal sought for based on the current AI phase, the number of times a property has been offered, and random chance -->
+			<!-- [Pay more, Pay normal, Pay less] -->
+			<TradeDealChance_Initial0>0.0,0.5,0.5</TradeDealChance_Initial0>
+			<TradeDealChance_Initial1>0.2,0.6,0.2</TradeDealChance_Initial1>
+			<TradeDealChance_Initial2>0.4,0.5,0.1</TradeDealChance_Initial2>
+			<TradeDealChance_Initial3>0.0,0.0,0.0</TradeDealChance_Initial3>
+			
+			<TradeDealChance_Accelerated0>0.1,0.55,0.35</TradeDealChance_Accelerated0>
+			<TradeDealChance_Accelerated1>0.2,0.6,0.2</TradeDealChance_Accelerated1>
+			<TradeDealChance_Accelerated2>0.6,0.4,0.0</TradeDealChance_Accelerated2>
+			<TradeDealChance_Accelerated3>0.0,0.0,0.0</TradeDealChance_Accelerated3>
+			
+			<TradeDealChance_EndGame0>0.0,0.4,0.6</TradeDealChance_EndGame0>
+			<TradeDealChance_EndGame1>0.1,0.5,0.4</TradeDealChance_EndGame1>
+			<TradeDealChance_EndGame2>0.2,0.6,0.2</TradeDealChance_EndGame2>
+			<TradeDealChance_EndGame3>0.0,0.0,0.0</TradeDealChance_EndGame3>
+			
+			<!-- Whether to trade cash or a bait property for a target property -->
+			<TradeCashOrProp>1.0</TradeCashOrProp>
+			<TradeCashPCThreshold>1.0</TradeCashPCThreshold>
+			<!-- The minimum cash the trade partner must have to trade for cash -->
+			<TradeMinCashOnHand>10</TradeMinCashOnHand>
+			<TradeNoCashUndevelopedMonopoly>true</TradeNoCashUndevelopedMonopoly>
+			<TradeCashForBetterMonopoly>true</TradeCashForBetterMonopoly>
+
+			<!-- Rules for trading away property -->
+			<TradeTargetPropPCThreshold>1.0</TradeTargetPropPCThreshold>
+			
+			<!-- Trade prop for prop? -->
+			<TradePropForProp>true</TradePropForProp>
+			
+			<!-- Trade prop for prop if bait PC is less than -->
+			<TradeBaitPCThreshold>2.0</TradeBaitPCThreshold>
+			
+			<!-- # Random roll to determine which property to trade.
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Chance to trade property with lowest Property Coefficient,
+				#   Chance to trade property with 2nd lowest Property Coefficient,
+				#   Chance to trade property with 3rd lowest Property Coefficient]-->
+			<TradePropChoiceRatios>0.8,0.2,0.0</TradePropChoiceRatios>			
+			
+			<!-- # Random roll to determine base amount of cash to ask for
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Use trading partner's PC to determine Real Value,
+				#   Use current player's PC to determine Real Value,
+				#   Use highest of the PC's involved in the trade ]	-->
+			<TradeCashChoiceRatios>0.1,0.5,0.4</TradeCashChoiceRatios>
+			
+			<!-- Determines the highest level the AI will build on any monopoly.  0 - None, 1 - A house, 2 - Two houses, 3 - Three houses, 4 - Four houses, 5 - Hotels -->
+			<BuildImprovementLevelMax>3</BuildImprovementLevelMax>
+		
+			<!-- Determines what the AI will use for the build allowance.  0 - Cash on Hand, 1 - Base Liquidaty, 2 - Secondary Liquidity-->
+			<BuildAllowanceType>2</BuildAllowanceType>
+			<!--If true the AI will consider how much they may have to pay in rent when deciding how much they can afford to spend on building -->
+			<BuildAllowanceUseSpatialAnalysis>false</BuildAllowanceUseSpatialAnalysis>
+			
+			<!--If true the AI will consider where the other players are when choosing where to build a monopoly.-->
+			<BuildUseSpatialAnalysis>false</BuildUseSpatialAnalysis>
+			
+			<!-- If true the AI will attempt to build a bunch of houses on a monopoly all at once.-->
+			<BuildInBatches>true</BuildInBatches>
+			
+			<!-- The number of houses that are left before the AI will attempt to cause a housing shortgage-->
+			<BuildCreateShortageThreshhold>0</BuildCreateShortageThreshhold>
+			<!-- If true the AI will attempt to deal with housing shortages-->
+			<BuildManageHousingShortgage>true</BuildManageHousingShortgage>
+			
+			<!-- A common seperated list of the raise cash priorities. -->
+			<!-- 0 - Mortage Non Monopoly Properties -->
+			<!-- 1 - Mortgage Monopoly Properties -->
+			<!-- 2 - Sell housing greater than the build level -->
+			<!-- 3 - Sell housing less than the build level -->
+			<!-- 4 - Sell housing equal to the build level -->
+			<RaiseCashPriorities>0,1,2,4,1</RaiseCashPriorities>
+			
+			<!-- Determines how the AI figures out how much cash it has available for unmortgaging -->
+			<!-- 0 - Consider the cash available -->
+			<!-- 1 - Consider the rent to go -->
+			<!-- 2 - Spatialy condiser rent -->
+			<UnmortgageBehaviour>2</UnmortgageBehaviour>
+
+			<!-- Buy property Behavior -->
+			<BuyBehaviourUseCCA>false</BuyBehaviourUseCCA>
+			
+			<!-- Applies only if the above is false -->
+			<BuyBehaviourTCAThreshold>3.5</BuyBehaviourTCAThreshold>
+			
+			<!-- # Auction Behavior
+				# Random roll to determine the auction value
+				# 3 double values, must add up to 1.0
+				# [ Low, Fair, High ] -->
+			<AuctionPercentageTable>0.1,0.1,0.8</AuctionPercentageTable>
+			<!-- Determination in whether to use TCA or CCA, based on PC -->
+			<AuctionTCAThreshold>3.75</AuctionTCAThreshold>
+
+			<!-- Determines what the AI will do when they are in jail.  0 - Always Pay out, 1 - Stay in Jail if there are no properties left to buy, 2 - Stay in jail if an oponent has a developed monopoly -->
+			<JailBehaviour>1</JailBehaviour>
+
+			<!-- The Following properties are the delay times for when the AI will respond to a dialog -->
+			<RollDialogTime>2</RollDialogTime>
+			<EndTurnDialogTime>2</EndTurnDialogTime>
+			<BuyDialogTime>2</BuyDialogTime>
+			<JailDialogTime>2</JailDialogTime>
+			<AuctionDialogTime>2</AuctionDialogTime>
+			<TradeDialogTime>2</TradeDialogTime>
+			<BuildDialogTime>0.5</BuildDialogTime>
+			<SellDailogTime>0.5</SellDailogTime>
+			<RaiseCashChoiceTime>1.5</RaiseCashChoiceTime>
+			<DialogTime>3</DialogTime>		
+
+			<!-- Counter Offers -->
+			<!-- Ask for cash -->
+			<CounterCashAskValue>100</CounterCashAskValue>
+			<CounterCashAskPropChance>0.25</CounterCashAskPropChance>
+
+			<!-- Ask for property -->
+			<CounterPropAskChance>0.0</CounterPropAskChance>
+
+			<!-- Offer property -->
+			<CounterBaitOfferBaitPCThreshold>0.0</CounterBaitOfferBaitPCThreshold>
+			<CounterBaitOfferBaitPCGreaterForPartner>false</CounterBaitOfferBaitPCGreaterForPartner>
+			<CounterBaitOfferChance>0.0</CounterBaitOfferChance>
+			
+		</personality>
+		
+		<personality name="HotShot" level="1">
+			<DesirabilityTable>1.0,1.0,1.0,1.25,1.5,1.5,1.0,1.0,1.5,1.0</DesirabilityTable>
+			<Availability2Properties>1.5,3.0,1.5</Availability2Properties>
+			<Availability3Properties>1.25,1.125,1.0,1.75,1.25,3.5,3.0</Availability3Properties>
+			<AvailabilityRR>1.25,1.125,1.0,1.0,1.75,1.5,1.5,2.5,2.0,3.0,2.5</AvailabilityRR>
+			
+			<!-- If true the AI will not move into the Accelerated phase until all three of the following tests are true-->
+			<PhaseAccelerated_Pass_All_Tests>false</PhaseAccelerated_Pass_All_Tests>
+			<!-- The number of properties sold on the board -->
+			<PhaseAccelerated_NumPropsSold>22</PhaseAccelerated_NumPropsSold>
+			<!-- The number of monopolies formed on the board.  This is monopolies for every player -->
+			<PhaseAccelerated_NumMonopolies>2</PhaseAccelerated_NumMonopolies>
+			<!-- The number of rolls that have been done by all players -->
+			<PhaseAccelerated_NumRolls>18</PhaseAccelerated_NumRolls>
+		
+			<!-- When all of the following three tests are true the AI will move in the the Game End phase. -->
+			<!-- If true we use the TCA test-->
+			<PhaseGameEnd_UseTCATest>false</PhaseGameEnd_UseTCATest>
+			<!-- The minimum housing level on all monopolies owned by this player.-->
+			<PhaseGameEnd_MinHousing>3</PhaseGameEnd_MinHousing>
+			<!-- The minimum number of monopolies owned by this player.-->
+			<PhaseGameEnd_NumMonopolies>2</PhaseGameEnd_NumMonopolies>
+			
+			<!-- The number of monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinMonopolies>2</RailraodReducedDesirablility_MinMonopolies>
+			<!-- The number of developed monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinHousing>3</RailraodReducedDesirablility_MinHousing>
+			<!-- The reduced rail road desirability.  Both of the above minimums must be met for this to take effect -->
+			<RailraodReducedDesirablility>1</RailraodReducedDesirablility>
+			
+			<CashReserve>50</CashReserve>
+			
+			<TradeLiquidityThreshold>2.625</TradeLiquidityThreshold>
+			
+			<TradeSecondaryLiquidityThreshold>3.5</TradeSecondaryLiquidityThreshold>
+			
+			<!-- If true the AI will take into account all properties from their location to go when calculating the conservative cash amount -->
+			<CanLookAheadToGo>false</CanLookAheadToGo>
+			
+			<!-- Random chance of player seeking a trade each turn, by phase -->
+			<TradeOdds>0.80,0.80,0.50</TradeOdds>
+			
+			<!-- The number of turns to wait until trying to trade for a purchased property -->
+			<TradeTurnsToWait>2</TradeTurnsToWait>
+			
+			<!-- Determining target property for a trade.
+				# Random roll to determine which property to go after.
+				# 3 double values, must add up to 1.0
+				# [ Chance to seek target with highest Property Coefficient,
+				#   Chance to seek target with 2nd highest Property Coefficient,
+				#   Chance to seek target with 3rd highest Property Coefficient-->
+			<TradeSeekOdds>0.7,0.2,0.1</TradeSeekOdds>
+			
+			<!-- Chance to use the lowest PC value for a Trade Value -->
+			<TradeLowestPCChance>0.25</TradeLowestPCChance>
+			
+			<!-- The TradeDealChance_* properties control the type of deal sought for based on the current AI phase, the number of times a property has been offered, and random chance -->
+			<!-- [Pay more, Pay normal, Pay less] -->
+			<TradeDealChance_Initial0>0.1,0.6,0.3</TradeDealChance_Initial0>
+			<TradeDealChance_Initial1>0.3,0.4,0.3</TradeDealChance_Initial1>
+			<TradeDealChance_Initial2>0.4,0.4,0.2</TradeDealChance_Initial2>
+			<TradeDealChance_Initial3>0.4,0.3,0.0</TradeDealChance_Initial3>
+			
+			<TradeDealChance_Accelerated0>0.3,0.6,0.1</TradeDealChance_Accelerated0>
+			<TradeDealChance_Accelerated1>0.5,0.5,0.0</TradeDealChance_Accelerated1>
+			<TradeDealChance_Accelerated2>0.6,0.4,0.0</TradeDealChance_Accelerated2>
+			<TradeDealChance_Accelerated3>0.4,0.1,0.0</TradeDealChance_Accelerated3>
+			
+			<TradeDealChance_EndGame0>0.0,0.4,0.6</TradeDealChance_EndGame0>
+			<TradeDealChance_EndGame1>0.0,0.6,0.4</TradeDealChance_EndGame1>
+			<TradeDealChance_EndGame2>0.2,0.5,0.3</TradeDealChance_EndGame2>
+			<TradeDealChance_EndGame3>0.25,0.25,0.0</TradeDealChance_EndGame3>
+			
+			<!-- Whether to trade cash or a bait property for a target property -->
+			<TradeCashOrProp>0.9</TradeCashOrProp>
+			<TradeCashPCThreshold>3.4</TradeCashPCThreshold>
+			<!-- The minimum cash the trade partner must have to trade for cash -->
+			<TradeMinCashOnHand>100</TradeMinCashOnHand>
+			<TradeNoCashUndevelopedMonopoly>true</TradeNoCashUndevelopedMonopoly>
+			<TradeCashForBetterMonopoly>false</TradeCashForBetterMonopoly>
+
+			<!-- Rules for trading away property -->
+			<TradeTargetPropPCThreshold>3.4</TradeTargetPropPCThreshold>
+			
+			<!-- Trade prop for prop? -->
+			<TradePropForProp>true</TradePropForProp>
+			
+			<!-- Trade prop for prop if bait PC is less than -->
+			<TradeBaitPCThreshold>2.5</TradeBaitPCThreshold>
+			
+			<!-- # Random roll to determine which property to trade.
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Chance to trade property with lowest Property Coefficient,
+				#   Chance to trade property with 2nd lowest Property Coefficient,
+				#   Chance to trade property with 3rd lowest Property Coefficient]-->
+			<TradePropChoiceRatios>0.9,0.1,0.0</TradePropChoiceRatios>			
+			
+			<!-- # Random roll to determine base amount of cash to ask for
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Use trading partner's PC to determine Real Value,
+				#   Use current player's PC to determine Real Value,
+				#   Use highest of the PC's involved in the trade ]	-->
+			<TradeCashChoiceRatios>0.0,1.0,0.0</TradeCashChoiceRatios>
+			
+			<!-- Determines the highest level the AI will build on any monopoly.  0 - None, 1 - A house, 2 - Two houses, 3 - Three houses, 4 - Four houses, 5 - Hotels -->
+			<BuildImprovementLevelMax>4</BuildImprovementLevelMax>
+		
+			<!-- Determines what the AI will use for the build allowance.  0 - Cash on Hand, 1 - Base Liquidaty, 2 - Secondary Liquidity-->
+			<BuildAllowanceType>1</BuildAllowanceType>
+			<!--If true the AI will consider how much they may have to pay in rent when deciding how much they can afford to spend on building -->
+			<BuildAllowanceUseSpatialAnalysis>true</BuildAllowanceUseSpatialAnalysis>
+			
+			<!--If true the AI will consider where the other players are when choosing where to build a monopoly.-->
+			<BuildUseSpatialAnalysis>false</BuildUseSpatialAnalysis>
+			
+			<!-- If true the AI will attempt to build a bunch of houses on a monopoly all at once.-->
+			<BuildInBatches>false</BuildInBatches>
+			
+			<!-- The number of houses that are left before the AI will attempt to cause a housing shortgage-->
+			<BuildCreateShortageThreshhold>0</BuildCreateShortageThreshhold>
+			<!-- If true the AI will attempt to deal with housing shortages-->
+			<BuildManageHousingShortgage>true</BuildManageHousingShortgage>
+			
+			<!-- A common seperated list of the raise cash priorities. -->
+			<!-- 0 - Mortage Non Monopoly Properties -->
+			<!-- 1 - Mortgage Monopoly Properties -->
+			<!-- 2 - Sell housing greater than the build level -->
+			<!-- 3 - Sell housing less than the build level -->
+			<!-- 4 - Sell housing equal to the build level -->
+			<RaiseCashPriorities>0,1,2,4,1</RaiseCashPriorities>
+			
+			<!-- Determines how the AI figures out how much cash it has available for unmortgaging -->
+			<!-- 0 - Consider the cash available -->
+			<!-- 1 - Consider the rent to go -->
+			<!-- 2 - Spatialy condiser rent -->
+			<UnmortgageBehaviour>1</UnmortgageBehaviour>
+
+			<!-- Buy property Behavior -->
+			<BuyBehaviourUseCCA>false</BuyBehaviourUseCCA>
+			
+			<!-- Applies only if the above is false -->
+			<BuyBehaviourTCAThreshold>3.5</BuyBehaviourTCAThreshold>
+			
+			<!-- # Auction Behavior
+				# Random roll to determine the auction value
+				# 3 double values, must add up to 1.0
+				# [ Low, Fair, High ] -->
+			<AuctionPercentageTable>0.2,0.5,0.3</AuctionPercentageTable>
+			<!-- Determination in whether to use TCA or CCA, based on PC -->
+			<AuctionTCAThreshold>3.5</AuctionTCAThreshold>
+
+			<!-- Determines what the AI will do when they are in jail.  0 - Always Pay out, 1 - Stay in Jail if there are no properties left to buy, 2 - Stay in jail if an oponent has a developed monopoly -->
+			<JailBehaviour>1</JailBehaviour>
+
+			<!-- The Following properties are the delay times for when the AI will respond to a dialog -->
+			<RollDialogTime>2</RollDialogTime>
+			<EndTurnDialogTime>2</EndTurnDialogTime>
+			<BuyDialogTime>2</BuyDialogTime>
+			<JailDialogTime>2</JailDialogTime>
+			<AuctionDialogTime>2</AuctionDialogTime>
+			<TradeDialogTime>2</TradeDialogTime>
+			<BuildDialogTime>0.5</BuildDialogTime>
+			<SellDailogTime>0.5</SellDailogTime>
+			<RaiseCashChoiceTime>1.5</RaiseCashChoiceTime>
+			<DialogTime>3</DialogTime>
+			
+			<!-- Counter Offers -->
+			<!-- Ask for cash -->
+			<CounterCashAskValue>150</CounterCashAskValue>
+			<CounterCashAskPropChance>0.1</CounterCashAskPropChance>
+
+			<!-- Ask for property -->
+			<CounterPropAskChance>0.1</CounterPropAskChance>
+
+			<!-- Offer property -->
+			<CounterBaitOfferBaitPCThreshold>1.3</CounterBaitOfferBaitPCThreshold>
+			<CounterBaitOfferBaitPCGreaterForPartner>false</CounterBaitOfferBaitPCGreaterForPartner>
+			<CounterBaitOfferChance>0.1</CounterBaitOfferChance>
+			
+		</personality>
+		
+		<personality name="GreedyGranny" level="2">
+			<DesirabilityTable>1.0,1.0,1.0,1.75,1.5,1.0,1.0,1.0,1.5,1.0</DesirabilityTable>
+			<Availability2Properties>1.5,3.0,1.5</Availability2Properties>
+			<Availability3Properties>1.25,1.125,0.25,1.75,1.125,3.5,3.0</Availability3Properties>
+			<AvailabilityRR>1.25,1.125,1.0,0.25,1.75,1.5,1.5,2.5,2.0,3.0,2.5</AvailabilityRR>
+			
+			<!-- If true the AI will not move into the Accelerated phase until all three of the following tests are true-->
+			<PhaseAccelerated_Pass_All_Tests>false</PhaseAccelerated_Pass_All_Tests>
+			<!-- The number of properties sold on the board -->
+			<PhaseAccelerated_NumPropsSold>20</PhaseAccelerated_NumPropsSold>
+			<!-- The number of monopolies formed on the board.  This is monopolies for every player -->
+			<PhaseAccelerated_NumMonopolies>1</PhaseAccelerated_NumMonopolies>
+			<!-- The number of rolls that have been done by all players -->
+			<PhaseAccelerated_NumRolls>15</PhaseAccelerated_NumRolls>
+		
+			<!-- When all of the following three tests are true the AI will move in the the Game End phase. -->
+			<!-- If true we use the TCA test-->
+			<PhaseGameEnd_UseTCATest>true</PhaseGameEnd_UseTCATest>
+			<!-- The minimum housing level on all monopolies owned by this player.-->
+			<PhaseGameEnd_MinHousing>3</PhaseGameEnd_MinHousing>
+			<!-- The minimum number of monopolies owned by this player.-->
+			<PhaseGameEnd_NumMonopolies>2</PhaseGameEnd_NumMonopolies>
+			
+			<!-- The number of monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinMonopolies>3</RailraodReducedDesirablility_MinMonopolies>
+			<!-- The number of developed monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinHousing>5</RailraodReducedDesirablility_MinHousing>
+			<!-- The reduced rail road desirability.  Both of the above minimums must be met for this to take effect -->
+			<RailraodReducedDesirablility>1</RailraodReducedDesirablility>
+			
+			<CashReserve>0</CashReserve>
+			
+			<TradeLiquidityThreshold>2.5</TradeLiquidityThreshold>
+			
+			<TradeSecondaryLiquidityThreshold>3</TradeSecondaryLiquidityThreshold>
+			
+			<!-- If true the AI will take into account all properties from their location to go when calculating the conservative cash amount -->
+			<CanLookAheadToGo>false</CanLookAheadToGo>
+			
+			<!-- Random chance of player seeking a trade each turn, by phase -->
+			<TradeOdds>0.75,1.0,0.10</TradeOdds>
+			
+			<!-- The number of turns to wait until trying to trade for a purchased property -->
+			<TradeTurnsToWait>1</TradeTurnsToWait>
+			
+			<!-- Determining target property for a trade.
+				# Random roll to determine which property to go after.
+				# 3 double values, must add up to 1.0
+				# [ Chance to seek target with highest Property Coefficient,
+				#   Chance to seek target with 2nd highest Property Coefficient,
+				#   Chance to seek target with 3rd highest Property Coefficient-->
+			<TradeSeekOdds>0.6,0.3,0.1</TradeSeekOdds>
+			
+			<!-- Chance to use the lowest PC value for a Trade Value -->
+			<TradeLowestPCChance>0.5</TradeLowestPCChance>
+			
+			<!-- The TradeDealChance_* properties control the type of deal sought for based on the current AI phase, the number of times a property has been offered, and random chance -->
+			<!-- [Pay more, Pay normal, Pay less] -->
+			<TradeDealChance_Initial0>0.0,0.5,0.6</TradeDealChance_Initial0>
+			<TradeDealChance_Initial1>0.0,0.5,0.5</TradeDealChance_Initial1>
+			<TradeDealChance_Initial2>0.0,0.4,0.4</TradeDealChance_Initial2>
+			<TradeDealChance_Initial3>0.1,0.5,0.2</TradeDealChance_Initial3>
+			
+			<TradeDealChance_Accelerated0>0.2,0.4,0.4</TradeDealChance_Accelerated0>
+			<TradeDealChance_Accelerated1>0.3,0.4,0.3</TradeDealChance_Accelerated1>
+			<TradeDealChance_Accelerated2>0.2,0.5,0.3</TradeDealChance_Accelerated2>
+			<TradeDealChance_Accelerated3>0.3,0.4,0.3</TradeDealChance_Accelerated3>
+			
+			<TradeDealChance_EndGame0>0.0,0.0,1.0</TradeDealChance_EndGame0>
+			<TradeDealChance_EndGame1>0.0,0.0,1.0</TradeDealChance_EndGame1>
+			<TradeDealChance_EndGame2>0.0,0.0,0.5</TradeDealChance_EndGame2>
+			<TradeDealChance_EndGame3>0.0,0.0,0.75</TradeDealChance_EndGame3>
+			
+			<!-- Whether to trade cash or a bait property for a target property -->
+			<TradeCashOrProp>0.8</TradeCashOrProp>
+			<TradeCashPCThreshold>2.9</TradeCashPCThreshold>
+			<!-- The minimum cash the trade partner must have to trade for cash -->
+			<TradeMinCashOnHand>50</TradeMinCashOnHand>
+			<TradeNoCashUndevelopedMonopoly>true</TradeNoCashUndevelopedMonopoly>
+			<TradeCashForBetterMonopoly>true</TradeCashForBetterMonopoly>
+
+			<!-- Rules for trading away property -->
+			<TradeTargetPropPCThreshold>2.9</TradeTargetPropPCThreshold>
+			
+			<!-- Trade prop for prop? -->
+			<TradePropForProp>true</TradePropForProp>
+			
+			<!-- Trade prop for prop if bait PC is less than -->
+			<TradeBaitPCThreshold>1.75</TradeBaitPCThreshold>
+			
+			<!-- # Random roll to determine which property to trade.
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Chance to trade property with lowest Property Coefficient,
+				#   Chance to trade property with 2nd lowest Property Coefficient,
+				#   Chance to trade property with 3rd lowest Property Coefficient]-->
+			<TradePropChoiceRatios>0.5,0.35,0.15</TradePropChoiceRatios>			
+			
+			<!-- # Random roll to determine base amount of cash to ask for
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Use trading partner's PC to determine Real Value,
+				#   Use current player's PC to determine Real Value,
+				#   Use highest of the PC's involved in the trade ]	-->
+			<TradeCashChoiceRatios>0.35,0.35,0.30</TradeCashChoiceRatios>
+			
+			<!-- Determines the highest level the AI will build on any monopoly.  0 - None, 1 - A house, 2 - Two houses, 3 - Three houses, 4 - Four houses, 5 - Hotels -->
+			<BuildImprovementLevelMax>5</BuildImprovementLevelMax>
+		
+			<!-- Determines what the AI will use for the build allowance.  0 - Cash on Hand, 1 - Base Liquidaty, 2 - Secondary Liquidity-->
+			<BuildAllowanceType>2</BuildAllowanceType>
+			<!--If true the AI will consider how much they may have to pay in rent when deciding how much they can afford to spend on building -->
+			<BuildAllowanceUseSpatialAnalysis>false</BuildAllowanceUseSpatialAnalysis>
+			
+			<!--If true the AI will consider where the other players are when choosing where to build a monopoly.-->
+			<BuildUseSpatialAnalysis>false</BuildUseSpatialAnalysis>
+			
+			<!-- If true the AI will attempt to build a bunch of houses on a monopoly all at once.-->
+			<BuildInBatches>false</BuildInBatches>
+			
+			<!-- The number of houses that are left before the AI will attempt to cause a housing shortgage-->
+			<BuildCreateShortageThreshhold>8</BuildCreateShortageThreshhold>
+			<!-- If true the AI will attempt to deal with housing shortages-->
+			<BuildManageHousingShortgage>true</BuildManageHousingShortgage>
+			
+			<!-- A common seperated list of the raise cash priorities. -->
+			<!-- 0 - Mortage Non Monopoly Properties -->
+			<!-- 1 - Mortgage Monopoly Properties -->
+			<!-- 2 - Sell housing greater than the build level -->
+			<!-- 3 - Sell housing less than the build level -->
+			<!-- 4 - Sell housing equal to the build level -->
+			<RaiseCashPriorities>0,1,2,3,4,1</RaiseCashPriorities>
+			
+			<!-- Determines how the AI figures out how much cash it has available for unmortgaging -->
+			<!-- 0 - Consider the cash available -->
+			<!-- 1 - Consider the rent to go -->
+			<!-- 2 - Spatialy condiser rent -->
+			<UnmortgageBehaviour>2</UnmortgageBehaviour>
+
+			<!-- Buy property Behavior -->
+			<BuyBehaviourUseCCA>false</BuyBehaviourUseCCA>
+			
+			<!-- Applies only if the above is false -->
+			<BuyBehaviourTCAThreshold>3</BuyBehaviourTCAThreshold>
+			
+			<!-- # Auction Behavior
+				# Random roll to determine the auction value
+				# 3 double values, must add up to 1.0
+				# [ Low, Fair, High ] -->
+			<AuctionPercentageTable>0.2,0.5,0.3</AuctionPercentageTable>
+			<!-- Determination in whether to use TCA or CCA, based on PC -->
+			<AuctionTCAThreshold>3</AuctionTCAThreshold>
+
+			<!-- Determines what the AI will do when they are in jail.  0 - Always Pay out, 1 - Stay in Jail if there are no properties left to buy, 2 - Stay in jail if an oponent has a developed monopoly -->
+			<JailBehaviour>1</JailBehaviour>
+			
+			<!-- The Following properties are the delay times for when the AI will respond to a dialog -->
+			<RollDialogTime>2</RollDialogTime>
+			<EndTurnDialogTime>2</EndTurnDialogTime>
+			<BuyDialogTime>2</BuyDialogTime>
+			<JailDialogTime>2</JailDialogTime>
+			<AuctionDialogTime>2</AuctionDialogTime>
+			<TradeDialogTime>2</TradeDialogTime>
+			<BuildDialogTime>0.5</BuildDialogTime>
+			<SellDailogTime>0.5</SellDailogTime>
+			<RaiseCashChoiceTime>1.5</RaiseCashChoiceTime>
+			<DialogTime>3</DialogTime>
+			
+			<!-- Counter Offers -->
+			<!-- Ask for cash -->
+			<CounterCashAskValue>200</CounterCashAskValue>
+			<CounterCashAskPropChance>0.33</CounterCashAskPropChance>
+
+			<!-- Ask for property -->
+			<CounterPropAskChance>0.33</CounterPropAskChance>
+
+			<!-- Offer property -->
+			<CounterBaitOfferBaitPCThreshold>1.5</CounterBaitOfferBaitPCThreshold>
+			<CounterBaitOfferBaitPCGreaterForPartner>true</CounterBaitOfferBaitPCGreaterForPartner>
+			<CounterBaitOfferChance>0.2</CounterBaitOfferChance>
+			
+		</personality>
+		
+		<personality name="TopGun" level="2">
+			<DesirabilityTable>1.0,1.25,1.25,2.0,1.5,1.0,1.0,1.0,1.5,1.0</DesirabilityTable>
+			<Availability2Properties>1.75,3.25,1.5</Availability2Properties>
+			<Availability3Properties>1.5,1.125,1.0,2.0,1.25,3.0,3.0</Availability3Properties>
+			<AvailabilityRR>1.5,1.25,1.0,1.0,2.0,2.0,2.0,2.5,2.5,3.5,2.0</AvailabilityRR>
+			
+			<!-- If true the AI will not move into the Accelerated phase until all three of the following tests are true-->
+			<PhaseAccelerated_Pass_All_Tests>false</PhaseAccelerated_Pass_All_Tests>
+			<!-- The number of properties sold on the board -->
+			<PhaseAccelerated_NumPropsSold>16</PhaseAccelerated_NumPropsSold>
+			<!-- The number of monopolies formed on the board.  This is monopolies for every player -->
+			<PhaseAccelerated_NumMonopolies>1</PhaseAccelerated_NumMonopolies>
+			<!-- The number of rolls that have been done by all players -->
+			<PhaseAccelerated_NumRolls>20</PhaseAccelerated_NumRolls>
+		
+			<!-- When all of the following three tests are true the AI will move in the the Game End phase. -->
+			<!-- If true we use the TCA test-->
+			<PhaseGameEnd_UseTCATest>true</PhaseGameEnd_UseTCATest>
+			<!-- The minimum housing level on all monopolies owned by this player.-->
+			<PhaseGameEnd_MinHousing>3</PhaseGameEnd_MinHousing>
+			<!-- The minimum number of monopolies owned by this player.-->
+			<PhaseGameEnd_NumMonopolies>2</PhaseGameEnd_NumMonopolies>
+			
+			<!-- The number of monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinMonopolies>2</RailraodReducedDesirablility_MinMonopolies>
+			<!-- The number of developed monopolies before considering reduced railroad desirability -->
+			<RailraodReducedDesirablility_MinHousing>4</RailraodReducedDesirablility_MinHousing>
+			<!-- The reduced rail road desirability.  Both of the above minimums must be met for this to take effect -->
+			<RailraodReducedDesirablility>1</RailraodReducedDesirablility>
+			
+			<CashReserve>0</CashReserve>
+			
+			<TradeLiquidityThreshold>2</TradeLiquidityThreshold>
+			
+			<TradeSecondaryLiquidityThreshold>2.5</TradeSecondaryLiquidityThreshold>
+			
+			<!-- If true the AI will take into account all properties from their location to go when calculating the conservative cash amount -->
+			<CanLookAheadToGo>false</CanLookAheadToGo>
+			
+			<!-- Random chance of player seeking a trade each turn, by phase -->
+			<TradeOdds>0.80,1.0,0.20</TradeOdds>
+			
+			<!-- The number of turns to wait until trying to trade for a purchased property -->
+			<TradeTurnsToWait>0</TradeTurnsToWait>
+			
+			<!-- Determining target property for a trade.
+				# Random roll to determine which property to go after.
+				# 3 double values, must add up to 1.0
+				# [ Chance to seek target with highest Property Coefficient,
+				#   Chance to seek target with 2nd highest Property Coefficient,
+				#   Chance to seek target with 3rd highest Property Coefficient-->
+			<TradeSeekOdds>0.5,0.35,0.15</TradeSeekOdds>
+			
+			<!-- Chance to use the lowest PC value for a Trade Value -->
+			<TradeLowestPCChance>0.8</TradeLowestPCChance>
+			
+			<!-- The TradeDealChance_* properties control the type of deal sought for based on the current AI phase, the number of times a property has been offered, and random chance -->
+			<!-- [Pay more, Pay normal, Pay less] -->
+			<TradeDealChance_Initial0>0.0,0.4,0.6</TradeDealChance_Initial0>
+			<TradeDealChance_Initial1>0.0,0.4,0.6</TradeDealChance_Initial1>
+			<TradeDealChance_Initial2>0.0,0.3,0.5</TradeDealChance_Initial2>
+			<TradeDealChance_Initial3>0.0,0.2,0.3</TradeDealChance_Initial3>
+			
+			<TradeDealChance_Accelerated0>0.2,0.6,0.2</TradeDealChance_Accelerated0>
+			<TradeDealChance_Accelerated1>0.4,0.4,0.2</TradeDealChance_Accelerated1>
+			<TradeDealChance_Accelerated2>0.4,0.6,0.0</TradeDealChance_Accelerated2>
+			<TradeDealChance_Accelerated3>0.6,0.2,0.0</TradeDealChance_Accelerated3>
+			
+			<TradeDealChance_EndGame0>0.0,0.4,1.0</TradeDealChance_EndGame0>
+			<TradeDealChance_EndGame1>0.0,0.0,1.0</TradeDealChance_EndGame1>
+			<TradeDealChance_EndGame2>0.0,0.0,0.5</TradeDealChance_EndGame2>
+			<TradeDealChance_EndGame3>0.0,0.0,0.5</TradeDealChance_EndGame3>
+			
+			<!-- Whether to trade cash or a bait property for a target property -->
+			<TradeCashOrProp>0.75</TradeCashOrProp>
+			<TradeCashPCThreshold>2.4</TradeCashPCThreshold>
+			<!-- The minimum cash the trade partner must have to trade for cash -->
+			<TradeMinCashOnHand>25</TradeMinCashOnHand>
+			<TradeNoCashUndevelopedMonopoly>true</TradeNoCashUndevelopedMonopoly>
+			<TradeCashForBetterMonopoly>true</TradeCashForBetterMonopoly>
+
+			<!-- Rules for trading away property -->
+			<TradeTargetPropPCThreshold>2.4</TradeTargetPropPCThreshold>
+			
+			<!-- Trade prop for prop? -->
+			<TradePropForProp>true</TradePropForProp>
+			
+			<!-- Trade prop for prop if bait PC is less than -->
+			<TradeBaitPCThreshold>2.25</TradeBaitPCThreshold>
+			
+			<!-- # Random roll to determine which property to trade.
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Chance to trade property with lowest Property Coefficient,
+				#   Chance to trade property with 2nd lowest Property Coefficient,
+				#   Chance to trade property with 3rd lowest Property Coefficient]-->
+			<TradePropChoiceRatios>0.7,0.2,0.1</TradePropChoiceRatios>			
+			
+			<!-- # Random roll to determine base amount of cash to ask for
+				# Only applicable if trading properties
+				# 3 double values, must add up to 1.0
+				# [ Use trading partner's PC to determine Real Value,
+				#   Use current player's PC to determine Real Value,
+				#   Use highest of the PC's involved in the trade ]	-->
+			<TradeCashChoiceRatios>0.25,0.25,0.5</TradeCashChoiceRatios>
+			
+			<!-- Determines the highest level the AI will build on any monopoly.  0 - None, 1 - A house, 2 - Two houses, 3 - Three houses, 4 - Four houses, 5 - Hotels -->
+			<BuildImprovementLevelMax>3</BuildImprovementLevelMax>
+		
+			<!-- Determines what the AI will use for the build allowance.  0 - Cash on Hand, 1 - Base Liquidaty, 2 - Secondary Liquidity-->
+			<BuildAllowanceType>2</BuildAllowanceType>
+			<!--If true the AI will consider how much they may have to pay in rent when deciding how much they can afford to spend on building -->
+			<BuildAllowanceUseSpatialAnalysis>true</BuildAllowanceUseSpatialAnalysis>
+			
+			<!--If true the AI will consider where the other players are when choosing where to build a monopoly.-->
+			<BuildUseSpatialAnalysis>true</BuildUseSpatialAnalysis>
+			
+			<!-- If true the AI will attempt to build a bunch of houses on a monopoly all at once.-->
+			<BuildInBatches>false</BuildInBatches>
+			
+			<!-- The number of houses that are left before the AI will attempt to cause a housing shortgage-->
+			<BuildCreateShortageThreshhold>12</BuildCreateShortageThreshhold>
+			<!-- If true the AI will attempt to deal with housing shortages-->
+			<BuildManageHousingShortgage>true</BuildManageHousingShortgage>
+			
+			<!-- A common seperated list of the raise cash priorities. -->
+			<!-- 0 - Mortage Non Monopoly Properties -->
+			<!-- 1 - Mortgage Monopoly Properties -->
+			<!-- 2 - Sell housing greater than the build level -->
+			<!-- 3 - Sell housing less than the build level -->
+			<!-- 4 - Sell housing equal to the build level -->
+			<RaiseCashPriorities>0,1,2,3,4,1</RaiseCashPriorities>
+			
+			<!-- Determines how the AI figures out how much cash it has available for unmortgaging -->
+			<!-- 0 - Consider the cash available -->
+			<!-- 1 - Consider the rent to go -->
+			<!-- 2 - Spatialy condiser rent -->
+			<UnmortgageBehaviour>1</UnmortgageBehaviour>
+
+			<!-- Buy property Behavior -->
+			<BuyBehaviourUseCCA>false</BuyBehaviourUseCCA>
+			
+			<!-- Applies only if the above is false -->
+			<BuyBehaviourTCAThreshold>2.5</BuyBehaviourTCAThreshold>
+			
+			<!-- # Auction Behavior
+				# Random roll to determine the auction value
+				# 3 double values, must add up to 1.0
+				# [ Low, Fair, High ] -->
+			<AuctionPercentageTable>0.05,0.50,0.45</AuctionPercentageTable>
+			<!-- Determination in whether to use TCA or CCA, based on PC -->
+			<AuctionTCAThreshold>2.5</AuctionTCAThreshold>
+
+			<!-- Determines what the AI will do when they are in jail.  0 - Always Pay out, 1 - Stay in Jail if there are no properties left to buy, 2 - Stay in jail if an oponent has a developed monopoly -->
+			<JailBehaviour>2</JailBehaviour>
+
+			<!-- The Following properties are the delay times for when the AI will respond to a dialog -->
+			<RollDialogTime>2</RollDialogTime>
+			<EndTurnDialogTime>2</EndTurnDialogTime>
+			<BuyDialogTime>2</BuyDialogTime>
+			<JailDialogTime>2</JailDialogTime>
+			<AuctionDialogTime>2</AuctionDialogTime>
+			<TradeDialogTime>2</TradeDialogTime>
+			<BuildDialogTime>0.5</BuildDialogTime>
+			<SellDailogTime>0.5</SellDailogTime>
+			<RaiseCashChoiceTime>1.5</RaiseCashChoiceTime>
+			<DialogTime>3</DialogTime>
+			
+			<!-- Counter Offers -->
+			<!-- Ask for cash -->
+			<CounterCashAskValue>300</CounterCashAskValue>
+			<CounterCashAskPropChance>0.5</CounterCashAskPropChance>
+
+			<!-- Ask for property -->
+			<CounterPropAskChance>0.5</CounterPropAskChance>
+
+			<!-- Offer property -->
+			<CounterBaitOfferBaitPCThreshold>1.3</CounterBaitOfferBaitPCThreshold>
+			<CounterBaitOfferBaitPCGreaterForPartner>false</CounterBaitOfferBaitPCGreaterForPartner>
+			<CounterBaitOfferChance>0.25</CounterBaitOfferChance>
+			
+		</personality>
+		
+	</ai>
+	
+	<ranks>
+		<!--
+		<rank name="Dice" id="1" threshold="0"/>
+		<rank name="Boot" id="2" threshold="15"/>	
+		<rank name="Bus" id="3" threshold="45"/>
+		<rank name="Cannon" id="4" threshold="75"/>
+		<rank name="Car" id="5" threshold="135"/>
+		<rank name="Dog" id="6" threshold="195"/>
+		<rank name="Doll" id="7" threshold="285"/>
+		<rank name="Race car" id="8" threshold="375"/>
+		<rank name="Football" id="9" threshold="465"/>
+		<rank name="Hamburger" id="10" threshold="555"/>
+		<rank name="1 Million" id="11" threshold="675"/>
+		<rank name="Iron" id="12" threshold="795"/>
+		<rank name="Koala" id="13" threshold="915"/>
+		<rank name="Mobile Phone" id="14" threshold="1035"/>
+		<rank name="Plane" id="15" threshold="1155"/>
+		<rank name="Purse" id="16" threshold="1305"/>
+		<rank name="Roller" id="17" threshold="1395"/>
+		<rank name="Ship" id="18" threshold="1485"/>
+		<rank name="Firefighter Hat" id="19" threshold="1605"/>
+		<rank name="Silver Hat" id="20" threshold="1725"/>
+		<rank name="5 Million" id="21" threshold="1875"/>
+		<rank name="Skateboard" id="22" threshold="1965"/>
+		<rank name="Sumo wrestler" id="23" threshold="2085"/>
+		<rank name="Thimble" id="24" threshold="2235"/>
+		<rank name="Wheelbarrow" id="25" threshold="2415"/>
+		<rank name="Tall Hat" id="26" threshold="2625"/>
+		<rank name="Cravat" id="27" threshold="2670"/>
+		<rank name="Crutchr" id="28" threshold="2730"/>
+		<rank name="Green House" id="29" threshold="2805"/>
+		<rank name="Red House" id="30" threshold="2895"/>
+		<rank name="10 Million" id="31" threshold="3105"/> -->
+		
+		<rank name="Dice" id="1" threshold="0"/>
+		<rank name="Boot" id="2" threshold="1"/>	
+		<rank name="Bus" id="3" threshold="2"/>
+		<rank name="Cannon" id="4" threshold="3"/>
+		<rank name="Car" id="5" threshold="4"/>
+		<rank name="Dog" id="6" threshold="5"/>
+		<rank name="Doll" id="7" threshold="6"/>
+		<rank name="Race car" id="8" threshold="7"/>
+		<rank name="Football" id="9" threshold="8"/>
+		<rank name="Hamburger" id="10" threshold="9"/>
+		<rank name="1 Million" id="11" threshold="10"/>
+		<rank name="Iron" id="12" threshold="11"/>
+		<rank name="Koala" id="13" threshold="12"/>
+		<rank name="Mobile Phone" id="14" threshold="13"/>
+		<rank name="Plane" id="15" threshold="14"/>
+		<rank name="Purse" id="16" threshold="15"/>
+		<rank name="Roller" id="17" threshold="16"/>
+		<rank name="Ship" id="18" threshold="17"/>
+		<rank name="Firefighter Hat" id="19" threshold="18"/>
+		<rank name="Silver Hat" id="20" threshold="19"/>
+		<rank name="5 Million" id="21" threshold="20"/>
+		<rank name="Skateboard" id="22" threshold="21"/>
+		<rank name="Sumo wrestler" id="23" threshold="22"/>
+		<rank name="Thimble" id="24" threshold="23"/>
+		<rank name="Wheelbarrow" id="25" threshold="24"/>
+		<rank name="Tall Hat" id="26" threshold="25"/>
+		<rank name="Cravat" id="27" threshold="26"/>
+		<rank name="Crutchr" id="28" threshold="27"/>
+		<rank name="Green House" id="29" threshold="28"/>
+		<rank name="Red House" id="30" threshold="29"/>
+		<rank name="10 Million" id="31" threshold="30"/>
+
+	</ranks>
+</monopolygame>

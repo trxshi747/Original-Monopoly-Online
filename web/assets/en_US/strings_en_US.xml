@@ -1,0 +1,1895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xliff version="1.0" xml:lang="en">
+
+  <file datatype="plaintext" original="strings.fla" source-language="EN">
+    <header></header>
+    <body>
+      <trans-unit id="001" resname="IDS_API_ERROR_BODY">
+        <source>Monopoly n'est pas disponible pour le moment, veuillez réessayer ultérieurement.</source>
+      </trans-unit>
+      <trans-unit id="002" resname="IDS_API_ERROR_TITLE">
+        <source>Erreur réseau</source>
+      </trans-unit>
+      <trans-unit id="003" resname="IDS_API_SAVE_ERROR_BODY">
+        <source>Impossible de sauvegarder la partie.</source>
+      </trans-unit>
+      <trans-unit id="004" resname="IDS_API_SAVE_ERROR_TITLE">
+        <source>Erreur réseau</source>
+      </trans-unit>
+      <trans-unit id="005" resname="IDS_BANKRUPT">
+        <source>FAILLITE</source>
+      </trans-unit>
+      <trans-unit id="006" resname="IDS_BANKRUPTCY_BUTTON">
+        <source>DÉCLARER FAILLITE</source>
+      </trans-unit>
+      <trans-unit id="007" resname="IDS_BOTH_JAIL_CARD">
+        <source>'%(1) ont tous les deux des cartes Vous êtes libéré de prison</source>
+      </trans-unit>
+      <trans-unit id="008" resname="IDS_BUILD_BUTTON">
+        <source>CONSTRUIRE</source>
+      </trans-unit>
+      <trans-unit id="009" resname="IDS_BUILD_DIALOG_MSG">
+        <source>Cliquez sur la propriété sur laquelle vous souhaitez construire.</source>
+      </trans-unit>
+      <trans-unit id="010" resname="IDS_BUILD_DIALOG_TITLE">
+        <source>CONSTRUIRE</source>
+      </trans-unit>
+      <trans-unit id="011" resname="IDS_BUTTON_ADD_PLAYER">
+        <source>AJOUTER JOUEUR</source>
+      </trans-unit>
+      <trans-unit id="012" resname="IDS_BUTTON_AUCTION">
+        <source>ENCHÈRE</source>
+      </trans-unit>
+      <trans-unit id="013" resname="IDS_BUTTON_BACK">
+        <source>RETOUR</source>
+      </trans-unit>
+      <trans-unit id="014" resname="IDS_BUTTON_BUY">
+        <source>ACHETER</source>
+      </trans-unit>
+      <trans-unit id="015" resname="IDS_BUTTON_CANCEL_TRADE">
+        <source>ANNULER</source>
+      </trans-unit>
+      <trans-unit id="016" resname="IDS_BUTTON_CLOSE">
+        <source>FERMER</source>
+      </trans-unit>
+      <trans-unit id="017" resname="IDS_BUTTON_CONTINUE">
+        <source>CONTINUER</source>
+      </trans-unit>
+      <trans-unit id="018" resname="IDS_BUTTON_NEWGAME">
+        <source>N. PARTIE</source>
+      </trans-unit>
+      <trans-unit id="019" resname="IDS_BUTTON_NO">
+        <source>NON</source>
+      </trans-unit>
+      <trans-unit id="020" resname="IDS_BUTTON_PLAY">
+        <source>JOUER</source>
+      </trans-unit>
+      <trans-unit id="021" resname="IDS_BUTTON_REMOVE_PLAYER">
+        <source>SUPPRIMER</source>
+      </trans-unit>
+      <trans-unit id="022" resname="IDS_BUTTON_YES">
+        <source>OUI</source>
+      </trans-unit>
+      <trans-unit id="023" resname="IDS_BUY_DIALOG_TITLE">
+        <source>À VENDRE</source>
+      </trans-unit>
+      <trans-unit id="024" resname="IDS_CHANCE_CARD01">
+        <source>AVANCEZ JUSQU'À LA CASE DÉPART.&#13;(RECEVEZ 200 $).</source>
+      </trans-unit>
+      <trans-unit id="025" resname="IDS_CHANCE_CARD02">
+        <source>RENDEZ-VOUS À&#13;L'AVENUE HENRI-MARTIN.&#13;SI VOUS PASSEZ PAR LA CASE DÉPART,&#13;RECEVEZ 200 $.</source>
+      </trans-unit>
+      <trans-unit id="026" resname="IDS_CHANCE_CARD03">
+        <source>AVANCEZ AU&#13;BOULEVARD DE LA VILLETTE.&#13;SI VOUS PASSEZ PAR LA CASE DÉPART,&#13;RECEVEZ 200 $.</source>
+      </trans-unit>
+      <trans-unit id="027" resname="IDS_CHANCE_CARD04">
+        <source>AVANCEZ JUSQU'À LA&#13;GARE LA PLUS PROCHE.&#13;&#13;Si elle N'APPARTIENT À PERSONNE, vous pouvez&#13;l'acheter auprès de la Banque.&#13;Si elle APPARTIENT déjà à un autre joueur,&#13;vous devez lui payer&#13;deux fois le loyer demandé.</source>
+      </trans-unit>
+      <trans-unit id="028" resname="IDS_CHANCE_CARD05">
+        <source>AVANCEZ JUSQU'À LA&#13;GARE LA PLUS PROCHE.&#13;&#13;Si elle N'APPARTIENT À PERSONNE, vous pouvez&#13;l'acheter auprès de la Banque.&#13;Si elle APPARTIENT déjà à un autre joueur,&#13;vous devez lui payer&#13;deux fois le loyer demandé.</source>
+      </trans-unit>
+      <trans-unit id="029" resname="IDS_CHANCE_CARD06">
+        <source>AVANCEZ JUSQU'À LA&#13;COMPAGNIE DE SERVICE PUBLIC LA PLUS PROCHE.&#13;&#13;Si elle N'APPARTIENT À PERSONNE, vous pouvez&#13;l'acheter auprès de la Banque.&#13;&#13;Si elle APPARTIENT déjà à un autre joueur,&#13;lancez les dés et payez le montant du total&#13;de vos dés multiplié par 10.</source>
+      </trans-unit>
+      <trans-unit id="030" resname="IDS_CHANCE_CARD07">
+        <source>LA BANQUE VOUS VERSE&#13;UN DIVIDENDE DE 50 $.</source>
+      </trans-unit>
+      <trans-unit id="031" resname="IDS_CHANCE_CARD08">
+        <source>VOUS ÊTES LIBÉRÉ DE PRISON.&#13;Cette carte peut être conservée jusqu'à ce qu'elle soit utilisée ou vendue.</source>
+      </trans-unit>
+      <trans-unit id="032" resname="IDS_CHANCE_CARD09">
+        <source>RECULEZ DE&#13;TROIS CASES.</source>
+      </trans-unit>
+      <trans-unit id="033" resname="IDS_CHANCE_CARD10">
+        <source>ALLEZ EN PRISON. AVANCEZ TOUT DROIT EN PRISON.&#13;NE PASSEZ PAS PAR LA CASE DÉPART. NE RECEVEZ PAS 200 $.</source>
+      </trans-unit>
+      <trans-unit id="034" resname="IDS_CHANCE_CARD11">
+        <source>VOUS FAITES DES RÉPARATIONS&#13;DANS TOUTES VOS PROPRIÉTÉS :&#13;VERSEZ 25 $ POUR CHAQUE MAISON&#13;ET 100 $ POUR CHAQUE HÔTEL QUE VOUS POSSÉDEZ.</source>
+      </trans-unit>
+      <trans-unit id="035" resname="IDS_CHANCE_CARD12">
+        <source>AMENDE POUR EXCÈS DE VITESSE : PAYEZ 15 $.</source>
+      </trans-unit>
+      <trans-unit id="036" resname="IDS_CHANCE_CARD13">
+        <source>ALLEZ À LA&#13;GARE MONTPARNASSE.&#13;SI VOUS PASSEZ PAR LA CASE DÉPART,&#13;RECEVEZ 200 $.</source>
+      </trans-unit>
+      <trans-unit id="037" resname="IDS_CHANCE_CARD14">
+        <source>RENDEZ-VOUS À&#13;LA RUE DE LA PAIX.</source>
+      </trans-unit>
+      <trans-unit id="038" resname="IDS_CHANCE_CARD15">
+        <source>VOTRE IMMEUBLE ET&#13;VOTRE PRÊT RAPPORTENT.&#13;VOUS DEVEZ TOUCHER 150 $.</source>
+      </trans-unit>
+      <trans-unit id="039" resname="IDS_CHANCE_CARD16">
+        <source>VOUS AVEZ ÉTÉ ÉLU&#13;PRÉSIDENT DU CONSEIL D'ADMINISTRATION.&#13;VERSEZ 50 $ À CHAQUE JOUEUR.</source>
+      </trans-unit>
+      <trans-unit id="040" resname="IDS_CHANCE_TITLE">
+        <source>CHANCE</source>
+      </trans-unit>
+      <trans-unit id="041" resname="IDS_CHEST_CARD01">
+        <source>AVANCEZ JUSQU'À LA CASE DÉPART.&#13;(RECEVEZ 200 $).</source>
+      </trans-unit>
+      <trans-unit id="042" resname="IDS_CHEST_CARD02">
+        <source>ERREUR DE LA BANQUE&#13;EN VOTRE FAVEUR.&#13;RECEVEZ 200 $.</source>
+      </trans-unit>
+      <trans-unit id="043" resname="IDS_CHEST_CARD03">
+        <source>VISITE CHEZ LE MÉDECIN :&#13;PAYEZ  50 $.</source>
+      </trans-unit>
+      <trans-unit id="044" resname="IDS_CHEST_CARD04">
+        <source>LA VENTE DE VOTRE STOCK&#13;VOUS RAPPORTE 50 $.</source>
+      </trans-unit>
+      <trans-unit id="045" resname="IDS_CHEST_CARD05">
+        <source>VOUS ÊTES LIBÉRÉ DE PRISON.&#13;Cette carte peut être conservée jusqu'à ce qu'elle soit utilisée ou vendue.</source>
+      </trans-unit>
+      <trans-unit id="046" resname="IDS_CHEST_CARD06">
+        <source>ALLEZ EN PRISON. AVANCEZ TOUT DROIT EN PRISON.&#13;NE PASSEZ PAS PAR LA CASE DÉPART. NE RECEVEZ PAS 200 $.</source>
+      </trans-unit>
+      <trans-unit id="047" resname="IDS_CHEST_CARD07">
+        <source>LES IMPÔTS VOUS&#13;REMBOURSENT 20 $.</source>
+      </trans-unit>
+      <trans-unit id="048" resname="IDS_CHEST_CARD08">
+        <source>C'EST VOTRE ANNIVERSAIRE :&#13;CHAQUE JOUEUR DOIT&#13;VOUS DONNER 10 $.</source>
+      </trans-unit>
+      <trans-unit id="049" resname="IDS_CHEST_CARD09">
+        <source>VOTRE ASSURANCE VIE&#13;VOUS RAPPORTE 100 $.</source>
+      </trans-unit>
+      <trans-unit id="050" resname="IDS_CHEST_CARD10">
+        <source>FRAIS D'HOSPITALISATION.&#13;PAYEZ 100 $.</source>
+      </trans-unit>
+      <trans-unit id="051" resname="IDS_CHEST_CARD11">
+        <source>FRAIS DE SCOLARITÉ.&#13;PAYEZ 50 $.</source>
+      </trans-unit>
+      <trans-unit id="052" resname="IDS_CHEST_CARD12">
+        <source>COMMISSION D'EXPERT IMMOBILIER.&#13;RECEVEZ 25 $.</source>
+      </trans-unit>
+      <trans-unit id="053" resname="IDS_CHEST_CARD13">
+        <source>VOUS DEVEZ FAIRE DES TRAVAUX&#13;DANS VOS PROPRIÉTÉS :&#13;VERSEZ 40 $ POUR CHAQUE MAISON&#13;ET 115 $ POUR CHAQUE HÔTEL QUE VOUS POSSÉDEZ.</source>
+      </trans-unit>
+      <trans-unit id="054" resname="IDS_CHEST_CARD14">
+        <source>VOUS AVEZ GAGNÉ&#13;LE DEUXIÈME&#13;PRIX DE BEAUTÉ.&#13;RECEVEZ 10 $.</source>
+      </trans-unit>
+      <trans-unit id="055" resname="IDS_CHEST_CARD15">
+        <source>VOUS HÉRITEZ DE&#13;100 $.</source>
+      </trans-unit>
+      <trans-unit id="056" resname="IDS_CHEST_CARD16">
+        <source>VOTRE PLACEMENT VOUS RAPPORTE.&#13;RECEVEZ 100 $.</source>
+      </trans-unit>
+      <trans-unit id="057" resname="IDS_CHEST_TITLE">
+        <source>CAISSE DE COMMUNAUTÉ</source>
+      </trans-unit>
+      <trans-unit id="058" resname="IDS_CLUB_POGO_DONOT_SHOW">
+        <source>Ne plus afficher</source>
+      </trans-unit>
+      <trans-unit id="059" resname="IDS_CLUB_POGO_MEMBERS">
+        <source>Sachez que MONOPOLY est différent de MONOPOLY Monde. Il n'utilise aucun Badge ou Classement de MONOPOLY Monde.&#13;&#13;Nous comptons ajouter des options de Badge et de Classement dans un futur proche.</source>
+      </trans-unit>
+      <trans-unit id="060" resname="IDS_DIALOG_AUCTION_TITLE">
+        <source>ENCHÈRE</source>
+      </trans-unit>
+      <trans-unit id="061" resname="IDS_DIALOG_AUCTION_TURN_TEXT">
+        <source>Tour de mise :</source>
+      </trans-unit>
+      <trans-unit id="062" resname="IDS_DIALOG_BUTTON_ACCEPT">
+        <source>ACCEPTER</source>
+      </trans-unit>
+      <trans-unit id="063" resname="IDS_DIALOG_BUTTON_BID">
+        <source>MISER</source>
+      </trans-unit>
+      <trans-unit id="064" resname="IDS_DIALOG_BUTTON_CANCEL">
+        <source>ANNULER</source>
+      </trans-unit>
+      <trans-unit id="065" resname="IDS_DIALOG_BUTTON_COUNTER">
+        <source>CTR OFF.</source>
+      </trans-unit>
+      <trans-unit id="066" resname="IDS_DIALOG_BUTTON_FOLD">
+        <source>SE COUCHER</source>
+      </trans-unit>
+      <trans-unit id="067" resname="IDS_DIALOG_BUTTON_OFFER">
+        <source>OFFRE</source>
+      </trans-unit>
+      <trans-unit id="068" resname="IDS_DIALOG_BUTTON_REJECT">
+        <source>REFUSER</source>
+      </trans-unit>
+      <trans-unit id="069" resname="IDS_DIALOG_CLOSE_BTN_DONE">
+        <source>TERMINÉ</source>
+      </trans-unit>
+      <trans-unit id="070" resname="IDS_DIALOG_MSG_RESTART">
+        <source>Voulez-vous vraiment redémarrer ? Toute progression sera perdue.</source>
+      </trans-unit>
+      <trans-unit id="071" resname="IDS_DIALOG_MSG_RETURN_TO_MENU">
+        <source>Voulez-vous vraiment revenir au menu ? Votre progression actuelle sera sauvegardée.</source>
+      </trans-unit>
+      <trans-unit id="072" resname="IDS_DIALOG_PASSGO_LAND">
+        <source>DÉPART - 200 $&#13;À CHAQUE ARRÊT</source>
+      </trans-unit>
+      <trans-unit id="073" resname="IDS_DIALOG_PASSGO_PASS">
+        <source>DÉPART - 200 $&#13;À CHAQUE PASSAGE</source>
+      </trans-unit>
+      <trans-unit id="074" resname="IDS_DIALOG_PASSGO_TITLE">
+        <source>PAYE</source>
+      </trans-unit>
+      <trans-unit id="075" resname="IDS_DIALOG_RESUME_CONFIRM_MSG">
+        <source>Il existe déjà une partie sauvegardée.</source>
+      </trans-unit>
+      <trans-unit id="076" resname="IDS_DIALOG_RESUME_CONFIRM_TITLE">
+        <source>Nouvelle partie ?</source>
+      </trans-unit>
+      <trans-unit id="077" resname="IDS_DIALOG_TITLE_CONFIRM">
+        <source>Confirmer</source>
+      </trans-unit>
+      <trans-unit id="078" resname="IDS_DIALOG_TRADE_CASH_TITLE">
+        <source>Transfert</source>
+      </trans-unit>
+      <trans-unit id="079" resname="IDS_DIALOG_TRADE_DETAIL_DEFAULT">
+        <source>Déplacez la souris sur une carte pour la voir en détail.</source>
+      </trans-unit>
+      <trans-unit id="080" resname="IDS_DIALOG_TRADE_DETAIL_HOUSES">
+        <source>Aucune propriété ne peut être échangée avec un autre joueur si des bâtiments occupent l'une des propriétés de ce groupe de couleur.</source>
+      </trans-unit>
+      <trans-unit id="081" resname="IDS_DIALOG_TRADE_PARTNER_SELECTION">
+        <source>Sélectionnez le joueur avec lequel faire un échange.</source>
+      </trans-unit>
+      <trans-unit id="082" resname="IDS_DIALOG_TRADE_TITLE">
+        <source>ÉCHANGE</source>
+      </trans-unit>
+      <trans-unit id="083" resname="IDS_DIALOGS_MESSAGE_BANKRUPTCY">
+        <source>Vous devez plus d'argent que vous n'en possédez. Récoltez de l'argent ou déclarez la faillite.</source>
+      </trans-unit>
+      <trans-unit id="084" resname="IDS_ELIPSES">
+        <source>...</source>
+      </trans-unit>
+      <trans-unit id="085" resname="IDS_GAME_INFO_EXIT_BUTTON">
+        <source>QUITTER RÉSUMÉ</source>
+      </trans-unit>
+      <trans-unit id="086" resname="IDS_HASBRO_LEGAL_1935">
+        <source>© 1935, 2011 HASBRO.</source>
+      </trans-unit>
+      <trans-unit id="087" resname="IDS_HASBRO_LEGAL_1936">
+        <source>© 1936, 2011 HASBRO.</source>
+      </trans-unit>
+      <trans-unit id="088" resname="IDS_HELP_01_BODY_01">
+        <source>Remportez le plus d'argent possible et ruinez vos adversaires !</source>
+      </trans-unit>
+      <trans-unit id="089" resname="IDS_HELP_01_BODY_02">
+        <source>Jouez contre un, deux ou trois joueurs en cliquant sur AJOUTER JOUEUR.&#13;&#13;Choisissez la difficulté de vos adversaires :&#13;&#13; - Agent immobilier = adversaire facile&#13; - Entrepreneur = adversaire intermédiaire&#13; - Magnat de l'immobilier = adversaire difficile&#13;&#13;Cliquez sur l'icône d'un pion pour choisir votre propre pion.&#13;Cliquez sur JOUER pour commencer à faire fortune !</source>
+      </trans-unit>
+      <trans-unit id="090" resname="IDS_HELP_01_TITLE_01">
+        <source>LE BUT :</source>
+      </trans-unit>
+      <trans-unit id="091" resname="IDS_HELP_01_TITLE_02">
+        <source>POUR COMMENCER :</source>
+      </trans-unit>
+      <trans-unit id="092" resname="IDS_HELP_02_BODY_01">
+        <source>Plateau : c'est ici que se déroule l'action de la partie.</source>
+      </trans-unit>
+      <trans-unit id="093" resname="IDS_HELP_02_BODY_02">
+        <source>Historique : rendez-vous ici pour consulter tous les événements relatifs à la partie.</source>
+      </trans-unit>
+      <trans-unit id="094" resname="IDS_HELP_02_BODY_03">
+        <source>Informations joueur : ici, vous pouvez consulter l'argent possédé par chaque joueur sur leurs comptes, les propriétés qu'ils possèdent et les cartes Vous êtes libéré de prison possédées.</source>
+      </trans-unit>
+      <trans-unit id="095" resname="IDS_HELP_02_TITLE_01">
+        <source>L'ÉCRAN DE JEU</source>
+      </trans-unit>
+      <trans-unit id="096" resname="IDS_HELP_03_BODY_01">
+        <source>Chaque tour débute par un lancer de dés. À votre tour, cliquez sur LANCER LES DÉS.&#13;&#13;Votre pion se déplacera automatiquement sur le plateau&#13;du nombre de cases correspondant au résultat de vos dés. Les cases du plateau peuvent être occupées&#13;par plusieurs pions en même temps.&#13;&#13;DOUBLE : si les deux dés indiquent le même chiffre, vous avez fait un double ! Si vous obtenez un nouveau double, vous relancez les dés. Cependant, au TROISIÈME double, vous allez en prison. Pour sortir de prison, vous devez faire un double, payer une caution de 50 $ ou utiliser une carte Vous êtes libéré de prison. Si vous choisissez de faire un double, vous avez trois tours pour réussir à sortir de prison. Si vous ne faites pas de double au troisième tour, vous DEVEZ payer 50 $ et avancer du nombre de cases correspondant.</source>
+      </trans-unit>
+      <trans-unit id="097" resname="IDS_HELP_03_TITLE_01">
+        <source>LANCER LES DÉS</source>
+      </trans-unit>
+      <trans-unit id="098" resname="IDS_HELP_04_BODY_01">
+        <source>Quand vous vous arrêtez sur une propriété qui n'appartient à personne, la Banque vous propose de l'acheter. Cliquez sur ACHETER pour l'acheter à la Banque à la valeur indiquée. Ou cliquez sur ENCHÈRE pour l'acquérir peut-être à un prix moindre ! Tous les joueurs doivent miser dans une enchère. Cliquez sur les touches fléchées pour définir votre mise. Le joueur qui remporte l'enchère paye le montant de la mise gagnante à la Banque et reçoit la carte du Titre de propriété. Si une propriété n'est pas achetée, elle doit être mise aux enchères. La mise aux enchères n'est pas une option.</source>
+      </trans-unit>
+      <trans-unit id="099" resname="IDS_HELP_04_TITLE_01">
+        <source>ACHETER UNE PROPRIÉTÉ</source>
+      </trans-unit>
+      <trans-unit id="100" resname="IDS_HELP_05_BODY_01">
+        <source>Quand vous vous arrêtez sur une propriété qui appartient à un autre joueur, son propriétaire vous demande de payer un loyer. Les montants des loyers sont indiqués sur chacune des cartes des Titres de propriétés. Le loyer est retiré automatiquement de votre compte bancaire et viré sur le compte du propriétaire de la propriété concernée. Si la propriété est hypothéquée, aucun loyer ne peut être perçu.&#13;&#13;ASTUCE POUR DEVENIR RICHE !&#13;&#13;Essayez de posséder tous les Titres de propriété d'un même groupe de couleur sur le plateau. Par exemple, Rue de la Paix et Avenue des Champs-Élysées font partie du groupe de couleur bleu foncé. Quand vous possédez toutes les propriétés d'un groupe de couleur, les loyers perçus sont doublés !</source>
+      </trans-unit>
+      <trans-unit id="101" resname="IDS_HELP_05_TITLE_01">
+        <source>PAYER LE LOYER</source>
+      </trans-unit>
+      <trans-unit id="102" resname="IDS_HELP_06_BODY_01">
+        <source>Quand vous vous arrêtez sur l'une de ces cases, vous recevez la carte du dessus de la pile. Vous devrez parfois donner de l'argent ou vous en gagnerez. Quoi qu'il en soit, la Banque se charge automatiquement de prendre ou donner l'argent en fonction de la carte tirée.</source>
+      </trans-unit>
+      <trans-unit id="103" resname="IDS_HELP_06_BODY_02">
+        <source>C'est votre jour de chance ! Vous avez reçu une carte Vous êtes libéré de prison que vous pouvez conserver jusqu'à ce qu'elle vous soit utile. Vous pouvez aussi la vendre à un autre joueur quand vous le voulez, à un prix déterminé par vous deux.</source>
+      </trans-unit>
+      <trans-unit id="104" resname="IDS_HELP_06_TITLE_01">
+        <source>CARTES CHANCE ET CAISSE DE COMMUNAUTÉ</source>
+      </trans-unit>
+      <trans-unit id="105" resname="IDS_HELP_06_TITLE_02">
+        <source>CARTES VOUS ÊTES LIBÉRÉ DE PRISON</source>
+      </trans-unit>
+      <trans-unit id="106" resname="IDS_HELP_07_BODY_01">
+        <source>À chaque fois que votre pion s'arrête ou passe par la case Départ, la Banque vous paye 200 $ ! Ce montant est payé une fois par tour de plateau.</source>
+      </trans-unit>
+      <trans-unit id="107" resname="IDS_HELP_07_TITLE_01">
+        <source>CASE DÉPART</source>
+      </trans-unit>
+      <trans-unit id="108" resname="IDS_HELP_08_BODY_01">
+        <source>Vous allez en prison quand :&#13; - Votre pion s'arrête sur la case Allez en prison&#13; - Vous tirez une carte Allez en prison&#13; - Vous faites un double trois fois à la suite pendant le même tour&#13;Quand vous êtes en prison :&#13; - Vous pouvez toujours acheter, vendre ou échanger des propriétés&#13; - Vous pouvez continuer à acheter ou vendre des maisons et des hôtels&#13; - Vous percevez toujours vos loyers&#13;Pour sortir de prison :&#13; - Faites un double au cours des trois prochains tours. Vous vous déplacerez immédiatement sur le plateau,&#13; mais vous ne jouerez pas un autre tour&#13; - Utilisez une carte Vous êtes libéré de prison si vous en possédez une&#13; - Achetez une carte Vous êtes libéré de prison à un autre joueur puis utilisez-la&#13; - Payez une caution de 50 $ avant de lancer les dés au cours de vos deux prochains tours</source>
+      </trans-unit>
+      <trans-unit id="109" resname="IDS_HELP_08_TITLE_01">
+        <source>PRISON</source>
+      </trans-unit>
+      <trans-unit id="110" resname="IDS_HELP_09_BODY_01">
+        <source>Les joueurs peuvent conclure des échanges en cliquant sur ÉCHANGE en bas de l'écran.&#13;&#13;Vous pouvez échanger des propriétés (hypothéquées ou pas), de l'argent et&#13;des cartes Vous êtes libéré de prison.&#13;&#13;Pour faire un échange :&#13; - Cliquez sur ce que vous voulez échanger dans votre colonne de biens. Vous pouvez échanger&#13; de l'argent, une propriété ou une carte Vous êtes libéré de prison. Cliquez ensuite sur&#13; ce que vous voulez obtenir en échange dans la colonne de votre adversaire.&#13; - Proposez de l'argent en cliquant sur les flèches haut et bas à côté de l'option « Transférer argent ».&#13; - Quand vous êtes prêt, cliquez sur PROPOSITION. L'autre joueur acceptera ou&#13; refusera votre échange.&#13;&#13;Quand un joueur possède une propriété hypothéquée et veut l'échanger avec un autre joueur, le joueur qui la reçoit doit immédiatement lever l'hypothèque (10 % de sa valeur + le montant de l'hypothèque) OU payer les 10 % et conserver la propriété hypothéquée.</source>
+      </trans-unit>
+      <trans-unit id="111" resname="IDS_HELP_09_TITLE_01">
+        <source>ÉCHANGER</source>
+      </trans-unit>
+      <trans-unit id="112" resname="IDS_HELP_10_BODY_01">
+        <source>Augmentez votre fortune en construisant des maisons ! Quand vous possédez toutes les propriétés d'un groupe de couleur, vous pouvez acheter des maisons à la Banque et les construire sur ces propriétés. Le prix de chaque maison est indiqué sur la carte du Titre de propriété de cette propriété.&#13;&#13;Règle de Construction/Destruction égale : vous pouvez construire autant que maisons que vous pouvez en acheter. Mais vous devez les construire uniformément. Cela signifie que vous devez construire une maison sur chaque propriété du groupe de couleur avant de pouvoir construire une deuxième maison sur n'importe quelle propriété de ce groupe. Vous pourrez alors construire la deuxième rangée de maisons, et ainsi de suite, jusqu'à posséder quatre maisons maximum par propriété.</source>
+      </trans-unit>
+      <trans-unit id="113" resname="IDS_HELP_10_TITLE_01">
+        <source>MAISONS</source>
+      </trans-unit>
+      <trans-unit id="114" resname="IDS_HELP_11_BODY_01">
+        <source>Quand vous avez quatre maisons sur chaque propriété d'un groupe de couleur, vous pouvez les améliorer ! Achetez un hôtel à la Banque et placez-le sur la propriété de votre choix de ce groupe de couleur. La Banque retirera les quatre maisons de cette propriété et vous fera payer le prix d'un hôtel, comme indiqué sur la carte du Titre de propriété. Les loyers des hôtels sont bien plus élevés que ceux des maisons, et c'est de cette façon que votre fortune augmentera !&#13;&#13;La limite fixée doit être de 32 maisons et 12 hôtels.</source>
+      </trans-unit>
+      <trans-unit id="115" resname="IDS_HELP_11_TITLE_01">
+        <source>HÔTELS</source>
+      </trans-unit>
+      <trans-unit id="116" resname="IDS_HELP_12_BODY_01">
+        <source>Vous avez besoin d'argent ? Vous pouvez vendre ou échanger vos propriétés, vos gares et vos compagnies de Service Public à un autre joueur. Vous devez tous les deux accepter un prix commun. Seules les propriétés sans maison ou hôtel dans ce groupe de couleur peuvent être revendues. Consultez la section « Échanger » pour plus de détails.</source>
+      </trans-unit>
+      <trans-unit id="117" resname="IDS_HELP_12_BODY_02">
+        <source>Vous manquez d'argent ? Hypothéquez vos propriétés auprès de la Banque ! Cliquez sur HYPOTHÉQUER en bas de l'écran.&#13;&#13;&#13;La Banque rachètera vos propriétés à la moitié de leur valeur. Avant de pouvoir hypothéquer vos propriétés, vous devrez revendre toutes les maisons et tous les hôtels que vous avez construits sur TOUTES les propriétés d'un groupe de couleur. Vous pouvez donc hypothéquer uniquement une propriété qui ne possède pas de bâtiments sur TOUTES les propriétés de ce groupe de couleur. Votre propriété ne peut pas être achetée par d'autres joueurs quand elle est hypothéquée, à moins que vous ne choisissiez de la leur revendre directement.&#13;&#13;&#13;</source>
+      </trans-unit>
+      <trans-unit id="118" resname="IDS_HELP_12_TITLE_01">
+        <source>VENDRE DES PROPRIÉTÉS</source>
+      </trans-unit>
+      <trans-unit id="119" resname="IDS_HELP_12_TITLE_02">
+        <source>HYPOTHÈQUES</source>
+      </trans-unit>
+      <trans-unit id="120" resname="IDS_HELP_13_BODY_01">
+        <source>Si vous n'avez plus d'argent et si vous ne pouvez pas rembourser vos dettes avec la revente de vos biens, vous êtes déclaré en faillite ! Ce qui signifie que vous avez perdu. Si vous devez de l'argent à un autre joueur, vous devez lui donner tout ce qu'il vous reste, vos propriétés, votre argent et vos cartes Vous êtes libéré de prison. Si vous êtes en faillite, mais qu'il vous reste encore des maisons ou des hôtels, la Banque vous les rachètera automatiquement et donnera cet argent au joueur à qui vous devez de l'argent.</source>
+      </trans-unit>
+      <trans-unit id="121" resname="IDS_HELP_13_BODY_02">
+        <source>Gagnez de l'argent en revendant vos maisons et vos hôtels, en hypothéquant vos propriétés auprès de la Banque, ou en vendant ou échangeant vos propriétés avec les autres joueurs en décidant d'un montant. La Banque rachète les maisons et les hôtels à la moitié de leur prix. Les propriétés s'hypothèquent uniquement et ne peuvent pas être revendues à la Banque.</source>
+      </trans-unit>
+      <trans-unit id="122" resname="IDS_HELP_13_TITLE_01">
+        <source>FAILLITE</source>
+      </trans-unit>
+      <trans-unit id="123" resname="IDS_HELP_13_TITLE_02">
+        <source>PLUS D'ARGENT ?</source>
+      </trans-unit>
+      <trans-unit id="124" resname="IDS_HELP_14_BODY_01">
+        <source>Jouer une partie avec plusieurs joueurs signifie plus d'argent à gagner ! &#13;Essayez de jouer une partie à trois ou quatre joueurs pour obtenir un score plus élevé.</source>
+      </trans-unit>
+      <trans-unit id="125" resname="IDS_HELP_14_BODY_02">
+        <source>Les doubles vous font gagner des points bonus !&#13;Essayez de jouer des parties plus longues pour augmenter vos chances de faire des doubles.</source>
+      </trans-unit>
+      <trans-unit id="126" resname="IDS_HELP_14_TITLE_01">
+        <source>SCORE DE JEU</source>
+      </trans-unit>
+      <trans-unit id="127" resname="IDS_HELP_14_TITLE_02">
+        <source>BONUS PRO DES DOUBLES</source>
+      </trans-unit>
+      <trans-unit id="128" resname="IDS_HELP_14_VERSION">
+        <source>Version %Ver%</source>
+      </trans-unit>
+      <trans-unit id="129" resname="IDS_HELP_BUTTON">
+        <source>RÈGLES</source>
+      </trans-unit>
+      <trans-unit id="130" resname="IDS_HIST_ADVANCE">
+        <source>%(1) a avancé jusqu'à %(2).</source>
+      </trans-unit>
+      <trans-unit id="131" resname="IDS_HIST_AUCTION_ALL_DROP_OUT">
+        <source>Tous les participants de l'enchère se sont couchés et la Banque a conservé %(1).</source>
+      </trans-unit>
+      <trans-unit id="132" resname="IDS_HIST_AUCTION_DROP_OUT">
+        <source>%(1) a abandonné l'enchère.</source>
+      </trans-unit>
+      <trans-unit id="133" resname="IDS_HIST_AUCTION_INIT">
+        <source>%(1) a démarré une enchère pour %(2).</source>
+      </trans-unit>
+      <trans-unit id="134" resname="IDS_HIST_AUCTION_WIN">
+        <source>%(1) a gagné l'enchère et acheté %(2) pour %(3).</source>
+      </trans-unit>
+      <trans-unit id="135" resname="IDS_HIST_BANKRUPT">
+        <source>%(1) a fait faillite.</source>
+      </trans-unit>
+      <trans-unit id="136" resname="IDS_HIST_BUILD_HOTEL">
+        <source>%(1) a dépensé %(2) pour construire un hôtel sur %(3).</source>
+      </trans-unit>
+      <trans-unit id="137" resname="IDS_HIST_BUILD_HOUSE">
+        <source>%(1) a dépensé %(2) pour construire une maison sur %(3).</source>
+      </trans-unit>
+      <trans-unit id="138" resname="IDS_HIST_COLLECT_ALL">
+        <source>%(1) a reçu %(2) de tous les autres joueurs.</source>
+      </trans-unit>
+      <trans-unit id="139" resname="IDS_HIST_GAIN">
+        <source>%(1) a reçu %(2) de %(3).</source>
+      </trans-unit>
+      <trans-unit id="140" resname="IDS_HIST_GET_CARD_OUT_JAIL">
+        <source>%(1) a reçu une carte Vous êtes libéré de prison.</source>
+      </trans-unit>
+      <trans-unit id="141" resname="IDS_HIST_GIVE_ALL">
+        <source>%(1) a donné %(2) à tous les autres joueurs.</source>
+      </trans-unit>
+      <trans-unit id="142" resname="IDS_HIST_INCOME_TAX">
+        <source>%(1) a payé %(2) en IMPÔTS SUR LE REVENU.</source>
+      </trans-unit>
+      <trans-unit id="143" resname="IDS_HIST_LAND_GO">
+        <source>La Banque a payé 200 $ à %(1) qui s'est arrêté sur la case Départ.</source>
+      </trans-unit>
+      <trans-unit id="144" resname="IDS_HIST_LEAVE_JAIL_CARD">
+        <source>%(1) a utilisé une carte pour sortir gratuitement de prison.</source>
+      </trans-unit>
+      <trans-unit id="145" resname="IDS_HIST_LEAVE_JAIL_DOUBLES">
+        <source>%(1) a fait un double et s'est échappé de prison !</source>
+      </trans-unit>
+      <trans-unit id="146" resname="IDS_HIST_LEAVE_JAIL_PAY">
+        <source>%(1) a payé 50 $ pour sortir de prison.</source>
+      </trans-unit>
+      <trans-unit id="147" resname="IDS_HIST_LUXURY_TAX">
+        <source>%(1) a payé %(2) en TAXE DE LUXE.</source>
+      </trans-unit>
+      <trans-unit id="148" resname="IDS_HIST_MONOPOLY_OBTAINED">
+        <source>%(1) a obtenu un monopole !</source>
+      </trans-unit>
+      <trans-unit id="149" resname="IDS_HIST_MORTGAGE">
+        <source>%(1) a hypothéqué %(2) pour %(3).</source>
+      </trans-unit>
+      <trans-unit id="150" resname="IDS_HIST_MORTGAGE_RECIEVED_PAYMENT">
+        <source>%(1) a payé %(2) pour des propriétés hypothéquées.</source>
+      </trans-unit>
+      <trans-unit id="151" resname="IDS_HIST_PASS_GO">
+        <source>La Banque a payé 200 $ à %(1) qui est passé par la case Départ.</source>
+      </trans-unit>
+      <trans-unit id="152" resname="IDS_HIST_PAYMENT">
+        <source>%(1) a payé %(2) à %(3).</source>
+      </trans-unit>
+      <trans-unit id="153" resname="IDS_HIST_PURCHASE">
+        <source>%(1) a acheté %(2) pour %(3).</source>
+      </trans-unit>
+      <trans-unit id="154" resname="IDS_HIST_RENT">
+        <source>%(1) a payé un loyer de %(2) à %(3).</source>
+      </trans-unit>
+      <trans-unit id="155" resname="IDS_HIST_ROLL">
+        <source>%(1) s'est déplacé sur %(2).</source>
+      </trans-unit>
+      <trans-unit id="156" resname="IDS_HIST_ROLL_DOUBLES">
+        <source>%(1) a fait un double et s'est déplacé sur %(2).</source>
+      </trans-unit>
+      <trans-unit id="157" resname="IDS_HIST_SELL_HOTEL">
+        <source>%(1) a vendu un hôtel sur %(2) pour %(3).</source>
+      </trans-unit>
+      <trans-unit id="158" resname="IDS_HIST_SELL_HOUSE">
+        <source>%(1) a vendu une maison sur %(2) pour %(3).</source>
+      </trans-unit>
+      <trans-unit id="159" resname="IDS_HIST_TO_JAIL_CHANCE">
+        <source>%(1) a été envoyé en prison avec une carte CHANCE.</source>
+      </trans-unit>
+      <trans-unit id="160" resname="IDS_HIST_TO_JAIL_CHEST">
+        <source>%(1) a été envoyé en prison avec une carte CAISSE DE COMMUNAUTÉ.</source>
+      </trans-unit>
+      <trans-unit id="161" resname="IDS_HIST_TO_JAIL_DOUBLES">
+        <source>%(1) a fait 3 doubles à la suite et a été envoyé en prison.</source>
+      </trans-unit>
+      <trans-unit id="162" resname="IDS_HIST_TO_JAIL_SPACE">
+        <source>%(1) s'est arrêté sur la case ALLEZ EN PRISON et a été envoyé en prison.</source>
+      </trans-unit>
+      <trans-unit id="163" resname="IDS_HIST_TRADE_ACCEPT">
+        <source>%(1) a échangé %(2) avec %(3) pour %(4).</source>
+      </trans-unit>
+      <trans-unit id="164" resname="IDS_HIST_TRADE_OFFER">
+        <source>%(1) a proposé d'échanger %(2) avec %(3) pour %(4).</source>
+      </trans-unit>
+      <trans-unit id="165" resname="IDS_HIST_TRADE_REFUSE">
+        <source>%(1) a refusé l'échange de %(2).</source>
+      </trans-unit>
+      <trans-unit id="166" resname="IDS_HIST_UNMORTGAGE">
+        <source>%(1) a levé l'hypothèque de %(2) pour %(3).</source>
+      </trans-unit>
+      <trans-unit id="167" resname="IDS_HIST_WELCOME_MSG">
+        <source>Bienvenue dans Monopoly</source>
+      </trans-unit>
+      <trans-unit id="168" resname="IDS_HISTORY_TITLE">
+        <source>HISTORIQUE</source>
+      </trans-unit>
+      <trans-unit id="169" resname="IDS_JAIL_BTN_CARD">
+        <source>CARTE</source>
+      </trans-unit>
+      <trans-unit id="170" resname="IDS_JAIL_BTN_PAY">
+        <source>PAYER LA CAUTION DE 50 $</source>
+      </trans-unit>
+      <trans-unit id="171" resname="IDS_JAIL_BTN_ROLL">
+        <source>FAIRE UN DOUBLE</source>
+      </trans-unit>
+      <trans-unit id="172" resname="IDS_JAIL_TITLE">
+        <source>PRIS.</source>
+      </trans-unit>
+      <trans-unit id="173" resname="IDS_MAIN_HELP_BUTTON">
+        <source>RÈGLES</source>
+      </trans-unit>
+      <trans-unit id="174" resname="IDS_MAINMENU_COMPUTER_PLAYER">
+        <source>ORDINATEUR</source>
+      </trans-unit>
+      <trans-unit id="175" resname="IDS_MAINMENU_DIFFICULTY">
+        <source>Choisissez la difficulté</source>
+      </trans-unit>
+      <trans-unit id="176" resname="IDS_MAINMENU_ENTREPRENEUR">
+        <source>ENTREPRENEUR</source>
+      </trans-unit>
+      <trans-unit id="177" resname="IDS_MAINMENU_FIRSTTIME">
+        <source>AGENT IMMOBILIER</source>
+      </trans-unit>
+      <trans-unit id="178" resname="IDS_MAINMENU_HUMAN_PLAYER">
+        <source>JOUEUR&#13;HUMAIN</source>
+      </trans-unit>
+      <trans-unit id="179" resname="IDS_MAINMENU_TOKEN_HELP">
+        <source>Cliquez sur l'icône d'un pion pour choisir votre propre pion.</source>
+      </trans-unit>
+      <trans-unit id="180" resname="IDS_MAINMENU_TYCOON">
+        <source>MAGNAT DE L'IMMOBILIER</source>
+      </trans-unit>
+      <trans-unit id="181" resname="IDS_MENU_BUTTON">
+        <source>MENU PRINCIPAL</source>
+      </trans-unit>
+      <trans-unit id="182" resname="IDS_MONOPOLY_BRAND">
+        <source>BRAND</source>
+      </trans-unit>
+      <trans-unit id="183" resname="IDS_MONOPOLY_CATCHPHRASE">
+        <source>Jeu de transactions immobilières vite conclues</source>
+      </trans-unit>
+      <trans-unit id="184" resname="IDS_MONOPOLY_CODE">
+        <source>01080009102</source>
+      </trans-unit>
+      <trans-unit id="185" resname="IDS_MONOPOLY_COPYRIGHT">
+        <source>Le nom et le logo MONOPOLY, le dessin distinctif du plateau, les quatre coins, le personnage MR. MONOPOLY, ainsi que chacun des éléments caractéristiques du plateau et des pièces de jeu sont des marques commerciales d'HASBRO pour son jeu de transactions immobilières et son matériel de jeu 1935, 2011 HASBRO. Tous droits réservés.</source>
+      </trans-unit>
+      <trans-unit id="186" resname="IDS_MORTGAGE_BUTTON">
+        <source>HYPOTHÉQUER</source>
+      </trans-unit>
+      <trans-unit id="187" resname="IDS_MORTGAGE_DIALOG_MSG">
+        <source>Cliquez sur la propriété que vous voulez hypothéquer.</source>
+      </trans-unit>
+      <trans-unit id="188" resname="IDS_MORTGAGE_DIALOG_TITLE">
+        <source>HYPOTHÉQUER</source>
+      </trans-unit>
+      <trans-unit id="189" resname="IDS_ONE_JAIL_CARD">
+        <source>%(1) possède une carte Vous êtes libéré de prison</source>
+      </trans-unit>
+      <trans-unit id="190" resname="IDS_PAUSE_BUTTON">
+        <source>MENU</source>
+      </trans-unit>
+      <trans-unit id="191" resname="IDS_PLAYER_NAME_1">
+        <source>Joueur</source>
+      </trans-unit>
+      <trans-unit id="192" resname="IDS_PLAYER_NAME_2">
+        <source>IA 1</source>
+      </trans-unit>
+      <trans-unit id="193" resname="IDS_PLAYER_NAME_3">
+        <source>IA 2</source>
+      </trans-unit>
+      <trans-unit id="194" resname="IDS_PLAYER_NAME_4">
+        <source>IA 3</source>
+      </trans-unit>
+      <trans-unit id="195" resname="IDS_PROPANEL_GARDENS">
+        <source>RUE</source>
+      </trans-unit>
+      <trans-unit id="196" resname="IDS_PROPCARD_$10">
+        <source>10 $</source>
+      </trans-unit>
+      <trans-unit id="197" resname="IDS_PROPCARD_$20">
+        <source>20 $</source>
+      </trans-unit>
+      <trans-unit id="198" resname="IDS_PROPCARD_$25">
+        <source>25 $</source>
+      </trans-unit>
+      <trans-unit id="199" resname="IDS_PROPCARD_$30">
+        <source>30 $</source>
+      </trans-unit>
+      <trans-unit id="200" resname="IDS_PROPCARD_$40">
+        <source>40 $</source>
+      </trans-unit>
+      <trans-unit id="201" resname="IDS_PROPCARD_$50">
+        <source>50 $</source>
+      </trans-unit>
+      <trans-unit id="202" resname="IDS_PROPCARD_$60">
+        <source>60 $</source>
+      </trans-unit>
+      <trans-unit id="203" resname="IDS_PROPCARD_$70">
+        <source>70 $</source>
+      </trans-unit>
+      <trans-unit id="204" resname="IDS_PROPCARD_$75">
+        <source>75 $</source>
+      </trans-unit>
+      <trans-unit id="205" resname="IDS_PROPCARD_$80">
+        <source>80 $</source>
+      </trans-unit>
+      <trans-unit id="206" resname="IDS_PROPCARD_$90">
+        <source>90 $</source>
+      </trans-unit>
+      <trans-unit id="207" resname="IDS_PROPCARD_$100">
+        <source>100 $</source>
+      </trans-unit>
+      <trans-unit id="208" resname="IDS_PROPCARD_$110">
+        <source>110 $</source>
+      </trans-unit>
+      <trans-unit id="209" resname="IDS_PROPCARD_$120">
+        <source>120 $</source>
+      </trans-unit>
+      <trans-unit id="210" resname="IDS_PROPCARD_$130">
+        <source>130 $</source>
+      </trans-unit>
+      <trans-unit id="211" resname="IDS_PROPCARD_$150">
+        <source>150 $</source>
+      </trans-unit>
+      <trans-unit id="212" resname="IDS_PROPCARD_$160">
+        <source>160 $</source>
+      </trans-unit>
+      <trans-unit id="213" resname="IDS_PROPCARD_$175">
+        <source>175 $</source>
+      </trans-unit>
+      <trans-unit id="214" resname="IDS_PROPCARD_$180">
+        <source>180 $</source>
+      </trans-unit>
+      <trans-unit id="215" resname="IDS_PROPCARD_$200">
+        <source>200 $</source>
+      </trans-unit>
+      <trans-unit id="216" resname="IDS_PROPCARD_$220">
+        <source>220 $</source>
+      </trans-unit>
+      <trans-unit id="217" resname="IDS_PROPCARD_$250">
+        <source>250 $</source>
+      </trans-unit>
+      <trans-unit id="218" resname="IDS_PROPCARD_$270">
+        <source>270 $</source>
+      </trans-unit>
+      <trans-unit id="219" resname="IDS_PROPCARD_$300">
+        <source>300 $</source>
+      </trans-unit>
+      <trans-unit id="220" resname="IDS_PROPCARD_$320">
+        <source>320 $</source>
+      </trans-unit>
+      <trans-unit id="221" resname="IDS_PROPCARD_$330">
+        <source>330 $</source>
+      </trans-unit>
+      <trans-unit id="222" resname="IDS_PROPCARD_$360">
+        <source>360 $</source>
+      </trans-unit>
+      <trans-unit id="223" resname="IDS_PROPCARD_$390">
+        <source>390 $</source>
+      </trans-unit>
+      <trans-unit id="224" resname="IDS_PROPCARD_$400">
+        <source>400 $</source>
+      </trans-unit>
+      <trans-unit id="225" resname="IDS_PROPCARD_$450">
+        <source>450 $</source>
+      </trans-unit>
+      <trans-unit id="226" resname="IDS_PROPCARD_$500">
+        <source>500 $</source>
+      </trans-unit>
+      <trans-unit id="227" resname="IDS_PROPCARD_$550">
+        <source>550 $</source>
+      </trans-unit>
+      <trans-unit id="228" resname="IDS_PROPCARD_$600">
+        <source>600 $</source>
+      </trans-unit>
+      <trans-unit id="229" resname="IDS_PROPCARD_$625">
+        <source>625 $</source>
+      </trans-unit>
+      <trans-unit id="230" resname="IDS_PROPCARD_$700">
+        <source>700 $</source>
+      </trans-unit>
+      <trans-unit id="231" resname="IDS_PROPCARD_$750">
+        <source>750 $</source>
+      </trans-unit>
+      <trans-unit id="232" resname="IDS_PROPCARD_$800">
+        <source>800 $</source>
+      </trans-unit>
+      <trans-unit id="233" resname="IDS_PROPCARD_$850">
+        <source>850 $</source>
+      </trans-unit>
+      <trans-unit id="234" resname="IDS_PROPCARD_$875">
+        <source>875 $</source>
+      </trans-unit>
+      <trans-unit id="235" resname="IDS_PROPCARD_$900">
+        <source>900 $</source>
+      </trans-unit>
+      <trans-unit id="236" resname="IDS_PROPCARD_$925">
+        <source>925 $</source>
+      </trans-unit>
+      <trans-unit id="237" resname="IDS_PROPCARD_$950">
+        <source>950 $</source>
+      </trans-unit>
+      <trans-unit id="238" resname="IDS_PROPCARD_$975">
+        <source>975 $</source>
+      </trans-unit>
+      <trans-unit id="239" resname="IDS_PROPCARD_$1000">
+        <source>1000 $</source>
+      </trans-unit>
+      <trans-unit id="240" resname="IDS_PROPCARD_$1025">
+        <source>1025 $</source>
+      </trans-unit>
+      <trans-unit id="241" resname="IDS_PROPCARD_$1050">
+        <source>1050 $</source>
+      </trans-unit>
+      <trans-unit id="242" resname="IDS_PROPCARD_$1100">
+        <source>1100 $</source>
+      </trans-unit>
+      <trans-unit id="243" resname="IDS_PROPCARD_$1150">
+        <source>1150 $</source>
+      </trans-unit>
+      <trans-unit id="244" resname="IDS_PROPCARD_$1200">
+        <source>1200 $</source>
+      </trans-unit>
+      <trans-unit id="245" resname="IDS_PROPCARD_$1275">
+        <source>1275 $</source>
+      </trans-unit>
+      <trans-unit id="246" resname="IDS_PROPCARD_$1300">
+        <source>1300 $</source>
+      </trans-unit>
+      <trans-unit id="247" resname="IDS_PROPCARD_$1400">
+        <source>1400 $</source>
+      </trans-unit>
+      <trans-unit id="248" resname="IDS_PROPCARD_$1500">
+        <source>1500 $</source>
+      </trans-unit>
+      <trans-unit id="249" resname="IDS_PROPCARD_$1700">
+        <source>1700 $</source>
+      </trans-unit>
+      <trans-unit id="250" resname="IDS_PROPCARD_$2000">
+        <source>2000 $</source>
+      </trans-unit>
+      <trans-unit id="251" resname="IDS_PROPCARD_1HOUSE">
+        <source>Avec 1 Maison</source>
+      </trans-unit>
+      <trans-unit id="252" resname="IDS_PROPCARD_2HOUSES">
+        <source>Avec 2 Maisons</source>
+      </trans-unit>
+      <trans-unit id="253" resname="IDS_PROPCARD_3HOUSES">
+        <source>Avec 3 Maisons</source>
+      </trans-unit>
+      <trans-unit id="254" resname="IDS_PROPCARD_4HOUSES">
+        <source>Avec 4 Maisons</source>
+      </trans-unit>
+      <trans-unit id="255" resname="IDS_PROPCARD_ATLANTIC_AVENUE">
+        <source>FAUBOURG&#13;SAINT-HONORÉ</source>
+      </trans-unit>
+      <trans-unit id="256" resname="IDS_PROPCARD_BALTIC_AVENUE">
+        <source>RUE&#13;LECOURBE</source>
+      </trans-unit>
+      <trans-unit id="257" resname="IDS_PROPCARD_BO_RAILROAD">
+        <source>GARE DU NORD</source>
+      </trans-unit>
+      <trans-unit id="258" resname="IDS_PROPCARD_BOARDWALK">
+        <source>RUE DE LA PAIX</source>
+      </trans-unit>
+      <trans-unit id="259" resname="IDS_PROPCARD_CONNECTICUT_AVENUE">
+        <source>AVENUE DE&#13;LA RÉPUBLIQUE</source>
+      </trans-unit>
+      <trans-unit id="260" resname="IDS_PROPCARD_ELECTRIC_COMPANY">
+        <source>COMPAGNIE DE DISTRIBUTION D'ÉLECTRICITÉ</source>
+      </trans-unit>
+      <trans-unit id="261" resname="IDS_PROPCARD_HOTEL">
+        <source>Avec HÔTEL</source>
+      </trans-unit>
+      <trans-unit id="262" resname="IDS_PROPCARD_HOTEL50">
+        <source>Prix d'un Hôtel 50 $&#13;plus 4 maisons</source>
+      </trans-unit>
+      <trans-unit id="263" resname="IDS_PROPCARD_HOTEL100">
+        <source>Prix d'un Hôtel 100 $&#13;plus 4 maisons</source>
+      </trans-unit>
+      <trans-unit id="264" resname="IDS_PROPCARD_HOTEL150">
+        <source>Prix d'un Hôtel 150 $&#13;plus 4 maisons</source>
+      </trans-unit>
+      <trans-unit id="265" resname="IDS_PROPCARD_HOTEL200">
+        <source>Prix d'un Hôtel 200 $&#13;plus 4 maisons</source>
+      </trans-unit>
+      <trans-unit id="266" resname="IDS_PROPCARD_HOUSE50">
+        <source>Prix des Maisons 50 $ chacune</source>
+      </trans-unit>
+      <trans-unit id="267" resname="IDS_PROPCARD_HOUSE100">
+        <source>Prix des Maisons 100 $ chacune</source>
+      </trans-unit>
+      <trans-unit id="268" resname="IDS_PROPCARD_HOUSE150">
+        <source>Prix des Maisons 150 $ chacune</source>
+      </trans-unit>
+      <trans-unit id="269" resname="IDS_PROPCARD_HOUSE200">
+        <source>Prix des Maisons 200 $ chacune</source>
+      </trans-unit>
+      <trans-unit id="270" resname="IDS_PROPCARD_IF2">
+        <source>Si vous avez 2 Gares</source>
+      </trans-unit>
+      <trans-unit id="271" resname="IDS_PROPCARD_IF3">
+        <source>Si vous avez 3 Gares</source>
+      </trans-unit>
+      <trans-unit id="272" resname="IDS_PROPCARD_IF4">
+        <source>Si vous avez 4 Gares</source>
+      </trans-unit>
+      <trans-unit id="273" resname="IDS_PROPCARD_ILLINOIS_AVENUE">
+        <source>AVENUE&#13;HENRI-MARTIN</source>
+      </trans-unit>
+      <trans-unit id="274" resname="IDS_PROPCARD_INDIANA_AVENUE">
+        <source>BOULEVARD&#13;MALESHERBES</source>
+      </trans-unit>
+      <trans-unit id="275" resname="IDS_PROPCARD_KENTUCKY_AVENUE">
+        <source>AVENUE&#13;MATIGNON</source>
+      </trans-unit>
+      <trans-unit id="276" resname="IDS_PROPCARD_MARVIN_GARDENS">
+        <source>RUE&#13;LA FAYETTE</source>
+      </trans-unit>
+      <trans-unit id="277" resname="IDS_PROPCARD_MEDITERRANEAN_AVENUE">
+        <source>BOULEVARD DE&#13;BELLEVILLE</source>
+      </trans-unit>
+      <trans-unit id="278" resname="IDS_PROPCARD_MORTGAGE">
+        <source>Valeur Hypothécaire</source>
+      </trans-unit>
+      <trans-unit id="279" resname="IDS_PROPCARD_MORTGAGEFOR30">
+        <source>Hypothéquée&#13;POUR 30 $</source>
+      </trans-unit>
+      <trans-unit id="280" resname="IDS_PROPCARD_MORTGAGEFOR50">
+        <source>Hypothéquée&#13;POUR 50 $</source>
+      </trans-unit>
+      <trans-unit id="281" resname="IDS_PROPCARD_MORTGAGEFOR60">
+        <source>Hypothéquée&#13;POUR 60 $</source>
+      </trans-unit>
+      <trans-unit id="282" resname="IDS_PROPCARD_MORTGAGEFOR70">
+        <source>Hypothéquée&#13;POUR 70 $</source>
+      </trans-unit>
+      <trans-unit id="283" resname="IDS_PROPCARD_MORTGAGEFOR75">
+        <source>Hypothéquée&#13;POUR 75 $</source>
+      </trans-unit>
+      <trans-unit id="284" resname="IDS_PROPCARD_MORTGAGEFOR80">
+        <source>Hypothéquée&#13;POUR 80 $</source>
+      </trans-unit>
+      <trans-unit id="285" resname="IDS_PROPCARD_MORTGAGEFOR90">
+        <source>Hypothéquée&#13;POUR 90 $</source>
+      </trans-unit>
+      <trans-unit id="286" resname="IDS_PROPCARD_MORTGAGEFOR100">
+        <source>Hypothéquée&#13;POUR 100 $</source>
+      </trans-unit>
+      <trans-unit id="287" resname="IDS_PROPCARD_MORTGAGEFOR110">
+        <source>Hypothéquée&#13;POUR 110 $</source>
+      </trans-unit>
+      <trans-unit id="288" resname="IDS_PROPCARD_MORTGAGEFOR120">
+        <source>Hypothéquée&#13;POUR 120 $</source>
+      </trans-unit>
+      <trans-unit id="289" resname="IDS_PROPCARD_MORTGAGEFOR130">
+        <source>Hypothéquée&#13;POUR 130 $</source>
+      </trans-unit>
+      <trans-unit id="290" resname="IDS_PROPCARD_MORTGAGEFOR140">
+        <source>Hypothéquée&#13;POUR 140 $</source>
+      </trans-unit>
+      <trans-unit id="291" resname="IDS_PROPCARD_MORTGAGEFOR150">
+        <source>Hypothéquée&#13;POUR 150 $</source>
+      </trans-unit>
+      <trans-unit id="292" resname="IDS_PROPCARD_MORTGAGEFOR160">
+        <source>Hypothéquée&#13;POUR 160 $</source>
+      </trans-unit>
+      <trans-unit id="293" resname="IDS_PROPCARD_MORTGAGEFOR175">
+        <source>Hypothéquée&#13;POUR 175 $</source>
+      </trans-unit>
+      <trans-unit id="294" resname="IDS_PROPCARD_MORTGAGEFOR200">
+        <source>Hypothéquée&#13;POUR 200 $</source>
+      </trans-unit>
+      <trans-unit id="295" resname="IDS_PROPCARD_MORTGAGERULE">
+        <source>Si cette propriété est hypothéquée,&#13;ce côté de la carte doit être mis en évidence sur la table.</source>
+      </trans-unit>
+      <trans-unit id="296" resname="IDS_PROPCARD_MORTGAGEVALUE30">
+        <source>Valeur Hypothécaire 30 $</source>
+      </trans-unit>
+      <trans-unit id="297" resname="IDS_PROPCARD_MORTGAGEVALUE50">
+        <source>Valeur Hypothécaire 50 $</source>
+      </trans-unit>
+      <trans-unit id="298" resname="IDS_PROPCARD_MORTGAGEVALUE60">
+        <source>Valeur Hypothécaire 60 $</source>
+      </trans-unit>
+      <trans-unit id="299" resname="IDS_PROPCARD_MORTGAGEVALUE70">
+        <source>Valeur Hypothécaire 70 $</source>
+      </trans-unit>
+      <trans-unit id="300" resname="IDS_PROPCARD_MORTGAGEVALUE80">
+        <source>Valeur Hypothécaire 80 $</source>
+      </trans-unit>
+      <trans-unit id="301" resname="IDS_PROPCARD_MORTGAGEVALUE90">
+        <source>Valeur Hypothécaire 90 $</source>
+      </trans-unit>
+      <trans-unit id="302" resname="IDS_PROPCARD_MORTGAGEVALUE100">
+        <source>Valeur Hypothécaire 100 $</source>
+      </trans-unit>
+      <trans-unit id="303" resname="IDS_PROPCARD_MORTGAGEVALUE110">
+        <source>Valeur Hypothécaire 110 $</source>
+      </trans-unit>
+      <trans-unit id="304" resname="IDS_PROPCARD_MORTGAGEVALUE120">
+        <source>Valeur Hypothécaire 120 $</source>
+      </trans-unit>
+      <trans-unit id="305" resname="IDS_PROPCARD_MORTGAGEVALUE130">
+        <source>Valeur Hypothécaire 130 $</source>
+      </trans-unit>
+      <trans-unit id="306" resname="IDS_PROPCARD_MORTGAGEVALUE140">
+        <source>Valeur Hypothécaire 140 $</source>
+      </trans-unit>
+      <trans-unit id="307" resname="IDS_PROPCARD_MORTGAGEVALUE150">
+        <source>Valeur Hypothécaire 150 $</source>
+      </trans-unit>
+      <trans-unit id="308" resname="IDS_PROPCARD_MORTGAGEVALUE160">
+        <source>Valeur Hypothécaire 160 $</source>
+      </trans-unit>
+      <trans-unit id="309" resname="IDS_PROPCARD_MORTGAGEVALUE175">
+        <source>Valeur Hypothécaire 175 $</source>
+      </trans-unit>
+      <trans-unit id="310" resname="IDS_PROPCARD_MORTGAGEVALUE200">
+        <source>Valeur Hypothécaire 200 $</source>
+      </trans-unit>
+      <trans-unit id="311" resname="IDS_PROPCARD_NEWYORK_AVENUE">
+        <source>PLACE&#13;PIGALLE</source>
+      </trans-unit>
+      <trans-unit id="312" resname="IDS_PROPCARD_NORTHCAROLINA_AVENUE">
+        <source>AVENUE&#13;FOCH</source>
+      </trans-unit>
+      <trans-unit id="313" resname="IDS_PROPCARD_ORIENTAL_AVENUE">
+        <source>RUE DE&#13;VAUGIRARD</source>
+      </trans-unit>
+      <trans-unit id="314" resname="IDS_PROPCARD_PACIFIC_AVENUE">
+        <source>AVENUE DE&#13;BRETEUIL</source>
+      </trans-unit>
+      <trans-unit id="315" resname="IDS_PROPCARD_PARK_PLACE">
+        <source>AVENUE DES&#13;CHAMPS-ÉLYSÉES</source>
+      </trans-unit>
+      <trans-unit id="316" resname="IDS_PROPCARD_PENNSYLVANIA_AVENUE">
+        <source>BOULEVARD DES&#13;CAPUCINES</source>
+      </trans-unit>
+      <trans-unit id="317" resname="IDS_PROPCARD_PENNSYLVANIA_RAILROAD">
+        <source>GARE DE&#13;LYON</source>
+      </trans-unit>
+      <trans-unit id="318" resname="IDS_PROPCARD_PENNSYLVANIA_RR">
+        <source>GARE DE LYON</source>
+      </trans-unit>
+      <trans-unit id="319" resname="IDS_PROPCARD_READING_RAILROAD">
+        <source>GARE MONTPARNASSE</source>
+      </trans-unit>
+      <trans-unit id="320" resname="IDS_PROPCARD_RENT">
+        <source>LOYER</source>
+      </trans-unit>
+      <trans-unit id="-" resname="IDS_PROPCARD_PAYRENT">
+        <source>PAYER LE LOYER</source>
+      </trans-unit>
+      <trans-unit id="321" resname="IDS_PROPCARD_RENT02">
+        <source>LOYER 2 $</source>
+      </trans-unit>
+      <trans-unit id="322" resname="IDS_PROPCARD_RENT04">
+        <source>LOYER 4 $</source>
+      </trans-unit>
+      <trans-unit id="323" resname="IDS_PROPCARD_RENT06">
+        <source>LOYER 6 $</source>
+      </trans-unit>
+      <trans-unit id="324" resname="IDS_PROPCARD_RENT08">
+        <source>LOYER 8 $</source>
+      </trans-unit>
+      <trans-unit id="325" resname="IDS_PROPCARD_RENT10">
+        <source>LOYER 10 $</source>
+      </trans-unit>
+      <trans-unit id="326" resname="IDS_PROPCARD_RENT12">
+        <source>LOYER 12 $</source>
+      </trans-unit>
+      <trans-unit id="327" resname="IDS_PROPCARD_RENT14">
+        <source>LOYER 14 $</source>
+      </trans-unit>
+      <trans-unit id="328" resname="IDS_PROPCARD_RENT16">
+        <source>LOYER 16 $</source>
+      </trans-unit>
+      <trans-unit id="329" resname="IDS_PROPCARD_RENT18">
+        <source>LOYER 18 $</source>
+      </trans-unit>
+      <trans-unit id="330" resname="IDS_PROPCARD_RENT20">
+        <source>LOYER 20 $</source>
+      </trans-unit>
+      <trans-unit id="331" resname="IDS_PROPCARD_RENT22">
+        <source>LOYER 22 $</source>
+      </trans-unit>
+      <trans-unit id="332" resname="IDS_PROPCARD_RENT24">
+        <source>LOYER 24 $</source>
+      </trans-unit>
+      <trans-unit id="333" resname="IDS_PROPCARD_RENT26">
+        <source>LOYER 26 $</source>
+      </trans-unit>
+      <trans-unit id="334" resname="IDS_PROPCARD_RENT28">
+        <source>LOYER 28 $</source>
+      </trans-unit>
+      <trans-unit id="335" resname="IDS_PROPCARD_RENT35">
+        <source>LOYER 35 $</source>
+      </trans-unit>
+      <trans-unit id="336" resname="IDS_PROPCARD_RENT50">
+        <source>LOYER 50 $</source>
+      </trans-unit>
+      <trans-unit id="337" resname="IDS_PROPCARD_RENTRULES">
+        <source>Posséder TOUS les terrains d'un groupe de couleur,&#13; double le loyer des terrains nus de ce groupe.</source>
+      </trans-unit>
+      <trans-unit id="338" resname="IDS_PROPCARD_SHORTLINE_RAILROAD">
+        <source>GARE&#13;SAINT-LAZARE</source>
+      </trans-unit>
+      <trans-unit id="339" resname="IDS_PROPCARD_SHORTLINE_RR">
+        <source>GARE SAINT-LAZARE</source>
+      </trans-unit>
+      <trans-unit id="340" resname="IDS_PROPCARD_STATES_AVENUE">
+        <source>AVENUE DE&#13;NEUILLY</source>
+      </trans-unit>
+      <trans-unit id="341" resname="IDS_PROPCARD_STCHARLES_PLACE">
+        <source>BOULEVARD DE&#13;LA VILLETTE</source>
+      </trans-unit>
+      <trans-unit id="342" resname="IDS_PROPCARD_STJAMES_PLACE">
+        <source>AVENUE&#13;MOZART</source>
+      </trans-unit>
+      <trans-unit id="343" resname="IDS_PROPCARD_TENNESSEE_AVENUE">
+        <source>BOULEVARD&#13;SAINT-MICHEL</source>
+      </trans-unit>
+      <trans-unit id="344" resname="IDS_PROPCARD_TITLEDEEDS">
+        <source>TITRE DE PROPRIÉTÉ</source>
+      </trans-unit>
+      <trans-unit id="345" resname="IDS_PROPCARD_UTILITY1">
+        <source>&#9;Si l'on possède UNE carte de compagnie de Service Public le loyer est 4 fois le montant indiqué par les dés.&#13;&#13;&#9;Si l'on possède les DEUX cartes de compagnie de Service Public le loyer est 10 fois le montant indiqué</source>
+      </trans-unit>
+      <trans-unit id="346" resname="IDS_PROPCARD_UTILITY2">
+        <source>Service Public le loyer est 4 fois le montant</source>
+      </trans-unit>
+      <trans-unit id="347" resname="IDS_PROPCARD_UTILITY3">
+        <source>indiqué par les dés.</source>
+      </trans-unit>
+      <trans-unit id="348" resname="IDS_PROPCARD_UTILITY4">
+        <source>&#9;Si l'on possède les DEUX cartes de compagnie de</source>
+      </trans-unit>
+      <trans-unit id="349" resname="IDS_PROPCARD_UTILITY5">
+        <source>Service Public le loyer est 10 fois le montant indiqué</source>
+      </trans-unit>
+      <trans-unit id="350" resname="IDS_PROPCARD_VENTNOR_AVENUE">
+        <source>PLACE DE&#13;LA BOURSE</source>
+      </trans-unit>
+      <trans-unit id="351" resname="IDS_PROPCARD_VERMONT_AVENUE">
+        <source>RUE DE&#13;COURCELLES</source>
+      </trans-unit>
+      <trans-unit id="352" resname="IDS_PROPCARD_VIRGINIA_AVENUE">
+        <source>RUE DE&#13;PARADIS</source>
+      </trans-unit>
+      <trans-unit id="353" resname="IDS_PROPCARD_WATER_WORKS">
+        <source>COMPAGNIE DE DISTRIBUTION DES EAUX</source>
+      </trans-unit>
+      <trans-unit id="354" resname="IDS_PROPERTYATLANTICAVENUE">
+        <source>FAUBOURG SAINT-HONORÉ</source>
+      </trans-unit>
+      <trans-unit id="355" resname="IDS_PROPERTYBALTICAVENUE">
+        <source>RUE LECOURBE</source>
+      </trans-unit>
+      <trans-unit id="356" resname="IDS_PROPERTYBOARDWALK">
+        <source>RUE DE LA PAIX</source>
+      </trans-unit>
+      <trans-unit id="357" resname="IDS_PROPERTYBORAILROAD">
+        <source>GARE DU NORD</source>
+      </trans-unit>
+      <trans-unit id="358" resname="IDS_PROPERTYCHANCE">
+        <source>CHANCE</source>
+      </trans-unit>
+      <trans-unit id="359" resname="IDS_PROPERTYCOMMUNITYCHEST">
+        <source>CAISSE DE COMMUNAUTÉ</source>
+      </trans-unit>
+      <trans-unit id="360" resname="IDS_PROPERTYCONNECTICUTAVENUE">
+        <source>AVENUE DE LA RÉPUBLIQUE</source>
+      </trans-unit>
+      <trans-unit id="361" resname="IDS_PROPERTYELECTRICCOMPANY">
+        <source>COMPAGNIE DE DISTRIBUTION D'ÉLECTRICITÉ</source>
+      </trans-unit>
+      <trans-unit id="362" resname="IDS_PROPERTYFREEPARKING">
+        <source>PARC GRATUIT</source>
+      </trans-unit>
+      <trans-unit id="363" resname="IDS_PROPERTYGO">
+        <source>DÉPART</source>
+      </trans-unit>
+      <trans-unit id="364" resname="IDS_PROPERTYGOTOJAIL">
+        <source>ALLEZ EN PRISON</source>
+      </trans-unit>
+      <trans-unit id="365" resname="IDS_PROPERTYILLINOISAVENUE">
+        <source>AVENUE HENRI-MARTIN</source>
+      </trans-unit>
+      <trans-unit id="366" resname="IDS_PROPERTYINCOMETAX">
+        <source>IMPÔTS SUR LE REVENU</source>
+      </trans-unit>
+      <trans-unit id="367" resname="IDS_PROPERTYINDIANAAVENUE">
+        <source>BOULEVARD MALESHERBES</source>
+      </trans-unit>
+      <trans-unit id="368" resname="IDS_PROPERTYJAIL">
+        <source>EN PRISON SIMPLE VISITE</source>
+      </trans-unit>
+      <trans-unit id="369" resname="IDS_PROPERTYKENTUCKYAVENUE">
+        <source>AVENUE MATIGNON</source>
+      </trans-unit>
+      <trans-unit id="370" resname="IDS_PROPERTYLUXURYTAX">
+        <source>TAXE DE LUXE</source>
+      </trans-unit>
+      <trans-unit id="371" resname="IDS_PROPERTYMARVINGARDENS">
+        <source>RUE LA FAYETTE</source>
+      </trans-unit>
+      <trans-unit id="372" resname="IDS_PROPERTYMEDITERRANEANAVENUE">
+        <source>BOULEVARD DE BELLEVILLE</source>
+      </trans-unit>
+      <trans-unit id="373" resname="IDS_PROPERTYNEWYORKAVENUE">
+        <source>PLACE PIGALLE</source>
+      </trans-unit>
+      <trans-unit id="374" resname="IDS_PROPERTYNORTHCAROLINAAVENUE">
+        <source>AVENUE FOCH</source>
+      </trans-unit>
+      <trans-unit id="375" resname="IDS_PROPERTYORIENTALAVENUE">
+        <source>RUE DE VAUGIRARD</source>
+      </trans-unit>
+      <trans-unit id="376" resname="IDS_PROPERTYPACIFICAVENUE">
+        <source>AVENUE DE BRETEUIL</source>
+      </trans-unit>
+      <trans-unit id="377" resname="IDS_PROPERTYPARKPLACE">
+        <source>AVENUE DES CHAMPS-ÉLYSÉES</source>
+      </trans-unit>
+      <trans-unit id="378" resname="IDS_PROPERTYPENNSYLVANIAAVENUE">
+        <source>BOULEVARD DES CAPUCINES</source>
+      </trans-unit>
+      <trans-unit id="379" resname="IDS_PROPERTYPENNSYLVANIARAILROAD">
+        <source>GARE DE LYON</source>
+      </trans-unit>
+      <trans-unit id="380" resname="IDS_PROPERTYREADINGRAILROAD">
+        <source>GARE MONTPARNASSE</source>
+      </trans-unit>
+      <trans-unit id="381" resname="IDS_PROPERTYSHORTLINE">
+        <source>GARE SAINT-LAZARE</source>
+      </trans-unit>
+      <trans-unit id="382" resname="IDS_PROPERTYSTATESAVENUE">
+        <source>AVENUE DE NEUILLY</source>
+      </trans-unit>
+      <trans-unit id="383" resname="IDS_PROPERTYSTCHARLESPLACE">
+        <source>BOULEVARD DE LA VILLETTE</source>
+      </trans-unit>
+      <trans-unit id="384" resname="IDS_PROPERTYSTJAMESPLACE">
+        <source>AVENUE MOZART</source>
+      </trans-unit>
+      <trans-unit id="385" resname="IDS_PROPERTYTENNESSEEAVENUE">
+        <source>BOULEVARD SAINT-MICHEL</source>
+      </trans-unit>
+      <trans-unit id="386" resname="IDS_PROPERTYVENTNORAVENUE">
+        <source>PLACE DE LA BOURSE</source>
+      </trans-unit>
+      <trans-unit id="387" resname="IDS_PROPERTYVERMONTAVENUE">
+        <source>RUE DE COURCELLES</source>
+      </trans-unit>
+      <trans-unit id="388" resname="IDS_PROPERTYVIRGINIAAVENUE">
+        <source>RUE DE PARADIS</source>
+      </trans-unit>
+      <trans-unit id="389" resname="IDS_PROPERTYWATERWORKS">
+        <source>COMPAGNIE DE DISTRIBUTION DES EAUX</source>
+      </trans-unit>
+      <trans-unit id="390" resname="IDS_PROPPANEL_60">
+        <source>PRIX 60 $</source>
+      </trans-unit>
+      <trans-unit id="391" resname="IDS_PROPPANEL_100">
+        <source>PRIX 100 $</source>
+      </trans-unit>
+      <trans-unit id="392" resname="IDS_PROPPANEL_120">
+        <source>PRIX 120 $</source>
+      </trans-unit>
+      <trans-unit id="393" resname="IDS_PROPPANEL_140">
+        <source>PRIX 140 $</source>
+      </trans-unit>
+      <trans-unit id="394" resname="IDS_PROPPANEL_150">
+        <source>PRIX 150 $</source>
+      </trans-unit>
+      <trans-unit id="395" resname="IDS_PROPPANEL_160">
+        <source>PRIX 160 $</source>
+      </trans-unit>
+      <trans-unit id="396" resname="IDS_PROPPANEL_180">
+        <source>PRIX 180 $</source>
+      </trans-unit>
+      <trans-unit id="397" resname="IDS_PROPPANEL_200">
+        <source>PRIX 200 $</source>
+      </trans-unit>
+      <trans-unit id="398" resname="IDS_PROPPANEL_220">
+        <source>PRIX 220 $</source>
+      </trans-unit>
+      <trans-unit id="399" resname="IDS_PROPPANEL_240">
+        <source>PRIX 240 $</source>
+      </trans-unit>
+      <trans-unit id="400" resname="IDS_PROPPANEL_260">
+        <source>PRIX 260 $</source>
+      </trans-unit>
+      <trans-unit id="401" resname="IDS_PROPPANEL_280">
+        <source>PRIX 280 $</source>
+      </trans-unit>
+      <trans-unit id="402" resname="IDS_PROPPANEL_300">
+        <source>PRIX 300 $</source>
+      </trans-unit>
+      <trans-unit id="403" resname="IDS_PROPPANEL_320">
+        <source>PRIX 320 $</source>
+      </trans-unit>
+      <trans-unit id="404" resname="IDS_PROPPANEL_350">
+        <source>PRIX 350 $</source>
+      </trans-unit>
+      <trans-unit id="405" resname="IDS_PROPPANEL_400">
+        <source>PRIX 400 $</source>
+      </trans-unit>
+      <trans-unit id="406" resname="IDS_PROPPANEL_ASYOUPASS">
+        <source>CHAQUE FOIS QUE VOUS PASSEZ ICI.</source>
+      </trans-unit>
+      <trans-unit id="407" resname="IDS_PROPPANEL_ATLANTIC">
+        <source>SAINT-HONORÉ</source>
+      </trans-unit>
+      <trans-unit id="408" resname="IDS_PROPPANEL_AVENUE">
+        <source>AVENUE</source>
+      </trans-unit>
+      <trans-unit id="409" resname="IDS_PROPPANEL_BALTIC">
+        <source>LECOURBE</source>
+      </trans-unit>
+      <trans-unit id="410" resname="IDS_PROPPANEL_BO">
+        <source>DU NORD</source>
+      </trans-unit>
+      <trans-unit id="411" resname="IDS_PROPPANEL_BOARDWALK">
+        <source>RUE DE LA PAIX</source>
+      </trans-unit>
+      <trans-unit id="412" resname="IDS_PROPPANEL_CAROLINA">
+        <source>FOCH</source>
+      </trans-unit>
+      <trans-unit id="413" resname="IDS_PROPPANEL_CHANCE">
+        <source>CHANCE</source>
+      </trans-unit>
+      <trans-unit id="414" resname="IDS_PROPPANEL_CHEST">
+        <source>CAISSE DE</source>
+      </trans-unit>
+      <trans-unit id="415" resname="IDS_PROPPANEL_COLLECT">
+        <source>RECEVEZ</source>
+      </trans-unit>
+      <trans-unit id="416" resname="IDS_PROPPANEL_COMMUNITY">
+        <source>COMMUNAUTÉ</source>
+      </trans-unit>
+      <trans-unit id="417" resname="IDS_PROPPANEL_COMPANY">
+        <source>COMPAGNIE DE</source>
+      </trans-unit>
+      <trans-unit id="418" resname="IDS_PROPPANEL_CONNECTICUT">
+        <source>DE LA RÉPUBLIQUE</source>
+      </trans-unit>
+      <trans-unit id="419" resname="IDS_PROPPANEL_ELECTRIC">
+        <source>DISTRIBUTION D'ÉLECTRICITÉ</source>
+      </trans-unit>
+      <trans-unit id="420" resname="IDS_PROPPANEL_FOLLOW">
+        <source> </source>
+      </trans-unit>
+      <trans-unit id="421" resname="IDS_PROPPANEL_FREE">
+        <source>GRATUIT</source>
+      </trans-unit>
+      <trans-unit id="422" resname="IDS_PROPPANEL_GARDENS">
+        <source>RUE</source>
+      </trans-unit>
+      <trans-unit id="423" resname="IDS_PROPPANEL_GOTO">
+        <source>ALLEZ EN</source>
+      </trans-unit>
+      <trans-unit id="424" resname="IDS_PROPPANEL_ILLINOIS">
+        <source>HENRI-MARTIN</source>
+      </trans-unit>
+      <trans-unit id="425" resname="IDS_PROPPANEL_IN">
+        <source>EN</source>
+      </trans-unit>
+      <trans-unit id="426" resname="IDS_PROPPANEL_INCOME">
+        <source>SUR LE REVENU</source>
+      </trans-unit>
+      <trans-unit id="427" resname="IDS_PROPPANEL_INDIANA">
+        <source>MALESHERBES</source>
+      </trans-unit>
+      <trans-unit id="428" resname="IDS_PROPPANEL_INSTRUCTION">
+        <source> </source>
+      </trans-unit>
+      <trans-unit id="429" resname="IDS_PROPPANEL_JAIL">
+        <source>PRISON</source>
+      </trans-unit>
+      <trans-unit id="430" resname="IDS_PROPPANEL_JUST">
+        <source>SIMPLE</source>
+      </trans-unit>
+      <trans-unit id="431" resname="IDS_PROPPANEL_KENTUCKY">
+        <source>MATIGNON</source>
+      </trans-unit>
+      <trans-unit id="432" resname="IDS_PROPPANEL_LINE">
+        <source>GARE</source>
+      </trans-unit>
+      <trans-unit id="433" resname="IDS_PROPPANEL_LUXURY">
+        <source>DE LUXE</source>
+      </trans-unit>
+      <trans-unit id="434" resname="IDS_PROPPANEL_MARVIN">
+        <source>LA FAYETTE</source>
+      </trans-unit>
+      <trans-unit id="435" resname="IDS_PROPPANEL_MEDITER">
+        <source>DE</source>
+      </trans-unit>
+      <trans-unit id="436" resname="IDS_PROPPANEL_NEWYORK">
+        <source>PIGALLE</source>
+      </trans-unit>
+      <trans-unit id="437" resname="IDS_PROPPANEL_NORTH">
+        <source>FOCH</source>
+      </trans-unit>
+      <trans-unit id="438" resname="IDS_PROPPANEL_ONTOPCARD">
+        <source> </source>
+      </trans-unit>
+      <trans-unit id="439" resname="IDS_PROPPANEL_ORIENTAL">
+        <source>DE VAUGIRARD</source>
+      </trans-unit>
+      <trans-unit id="440" resname="IDS_PROPPANEL_PACIFIC">
+        <source>DE BRETEUIL</source>
+      </trans-unit>
+      <trans-unit id="441" resname="IDS_PROPPANEL_PARK">
+        <source>AVENUE</source>
+      </trans-unit>
+      <trans-unit id="442" resname="IDS_PROPPANEL_PARKING">
+        <source>PARC</source>
+      </trans-unit>
+      <trans-unit id="443" resname="IDS_PROPPANEL_PAY100">
+        <source>PAYEZ 100 $</source>
+      </trans-unit>
+      <trans-unit id="444" resname="IDS_PROPPANEL_PAY200">
+        <source>PAYEZ 200 $</source>
+      </trans-unit>
+      <trans-unit id="445" resname="IDS_PROPPANEL_PENNSYLVANIA">
+        <source>DES CAPUCINES</source>
+      </trans-unit>
+      <trans-unit id="446" resname="IDS_PROPPANEL_PLACE">
+        <source>PLACE</source>
+      </trans-unit>
+      <trans-unit id="447" resname="IDS_PROPPANEL_RAILROAD">
+        <source>GARE</source>
+      </trans-unit>
+      <trans-unit id="448" resname="IDS_PROPPANEL_RANEAN">
+        <source>BELLEVILLE</source>
+      </trans-unit>
+      <trans-unit id="449" resname="IDS_PROPPANEL_READING">
+        <source>MONTPARNASSE</source>
+      </trans-unit>
+      <trans-unit id="450" resname="IDS_PROPPANEL_SALARY">
+        <source>200 $</source>
+      </trans-unit>
+      <trans-unit id="451" resname="IDS_PROPPANEL_SHORT">
+        <source>SAINT-LAZARE</source>
+      </trans-unit>
+      <trans-unit id="452" resname="IDS_PROPPANEL_STATES">
+        <source>DE NEUILLY</source>
+      </trans-unit>
+      <trans-unit id="453" resname="IDS_PROPPANEL_STCHARLES">
+        <source>DE LA VILLETTE</source>
+      </trans-unit>
+      <trans-unit id="454" resname="IDS_PROPPANEL_STJAMES">
+        <source>MOZART</source>
+      </trans-unit>
+      <trans-unit id="455" resname="IDS_PROPPANEL_TAX">
+        <source>TAXE</source>
+      </trans-unit>
+      <trans-unit id="456" resname="IDS_PROPPANEL_TENNESSEE">
+        <source>SAINT-MICHEL</source>
+      </trans-unit>
+      <trans-unit id="457" resname="IDS_PROPPANEL_VENTNOR">
+        <source>DE LA BOURSE</source>
+      </trans-unit>
+      <trans-unit id="458" resname="IDS_PROPPANEL_VERMONT">
+        <source>DE COURCELLES</source>
+      </trans-unit>
+      <trans-unit id="459" resname="IDS_PROPPANEL_VIRGINIA">
+        <source>DE PARADIS</source>
+      </trans-unit>
+      <trans-unit id="460" resname="IDS_PROPPANEL_VISITING">
+        <source>VISITE</source>
+      </trans-unit>
+      <trans-unit id="461" resname="IDS_PROPPANEL_WATER">
+        <source>DISTRIBUTION DES EAUX</source>
+      </trans-unit>
+      <trans-unit id="462" resname="IDS_PROPPANEL_WORKS">
+        <source>COMPAGNIE DE</source>
+      </trans-unit>
+      <trans-unit id="463" resname="IDS_RESTART_BUTTON">
+        <source>REDÉMARRER</source>
+      </trans-unit>
+      <trans-unit id="464" resname="IDS_RESUME_BUTTON">
+        <source>REPRENDRE</source>
+      </trans-unit>
+      <trans-unit id="465" resname="IDS_ROLLUP_BIG_XP">
+        <source>Recevoir un loyer plus de 20 fois</source>
+      </trans-unit>
+      <trans-unit id="466" resname="IDS_ROLLUP_DOUBLE_BONUS">
+        <source>Bonus Pro des doubles</source>
+      </trans-unit>
+      <trans-unit id="467" resname="IDS_ROLLUP_GAME_SCORE">
+        <source>Score de jeu</source>
+      </trans-unit>
+      <trans-unit id="468" resname="IDS_ROLLUP_GAME_TOKENS">
+        <source>Jetons de jeu</source>
+      </trans-unit>
+      <trans-unit id="469" resname="IDS_ROLLUP_HEADER_LOSS">
+        <source>Vous avez perdu. </source>
+      </trans-unit>
+      <trans-unit id="470" resname="IDS_ROLLUP_HEADER_WIN">
+        <source>Vous avez gagné !</source>
+      </trans-unit>
+      <trans-unit id="471" resname="IDS_ROLLUP_HIGH_SCORE">
+        <source>Votre meilleur score</source>
+      </trans-unit>
+      <trans-unit id="472" resname="IDS_ROLLUP_PLACE_BONUS1">
+        <source>1ère place : %(1) x %(2) tours</source>
+      </trans-unit>
+      <trans-unit id="473" resname="IDS_ROLLUP_PLACE_BONUS2">
+        <source>2e place : %(1) x %(2) tours</source>
+      </trans-unit>
+      <trans-unit id="474" resname="IDS_ROLLUP_PLACE_BONUS3">
+        <source>3e place : %(1) x %(2) tours</source>
+      </trans-unit>
+      <trans-unit id="475" resname="IDS_ROLLUP_PLACE_BONUS4">
+        <source>4e place : %(1) x %(2) tours</source>
+      </trans-unit>
+      <trans-unit id="476" resname="IDS_ROLLUP_SMALL_XP">
+        <source>Score &gt; 5 000</source>
+      </trans-unit>
+      <trans-unit id="477" resname="IDS_ROLLUP_TAB_SCORE">
+        <source>SCORE</source>
+      </trans-unit>
+      <trans-unit id="478" resname="IDS_ROLLUP_TAB_TIPS">
+        <source>ASTUCES</source>
+      </trans-unit>
+      <trans-unit id="479" resname="IDS_ROLLUP_TAB_TOKENS">
+        <source>JETONS</source>
+      </trans-unit>
+      <trans-unit id="480" resname="IDS_ROLLUP_TAB_XP">
+        <source>XP</source>
+      </trans-unit>
+      <trans-unit id="481" resname="IDS_ROLLUP_TIP1">
+        <source>Pour gagner à MONOPOLY, vous devez posséder un groupe de couleur complet pour y construire des maisons.</source>
+      </trans-unit>
+      <trans-unit id="482" resname="IDS_ROLLUP_TIP2">
+        <source>Pour acquérir un groupe de couleur complet, faites des échanges pour obtenir les propriétés dont vous avez besoin.</source>
+      </trans-unit>
+      <trans-unit id="483" resname="IDS_ROLLUP_TIP3">
+        <source>Si vous parvenez à acheter toutes les maisons disponibles, vous empêcherez vos adversaires de construire leurs propres maisons.</source>
+      </trans-unit>
+      <trans-unit id="484" resname="IDS_ROLLUP_TIP4">
+        <source>Essayez d'obtenir des groupes de couleur des propriétés les moins chères pour « réduire » le nombre de maisons disponible, à moindre coût.</source>
+      </trans-unit>
+      <trans-unit id="485" resname="IDS_ROLLUP_TIP5">
+        <source>Si vous avez besoin d'argent, il est préférable d'hypothéquer une propriété plutôt que de vendre une maison.</source>
+      </trans-unit>
+      <trans-unit id="486" resname="IDS_ROLLUP_TIP6">
+        <source>Si vous parvenez à posséder le groupe de couleur orange, vous serez en bonne position. Pourquoi ? Parce que ce sont les propriétés où les joueurs s'arrêtent le plus.</source>
+      </trans-unit>
+      <trans-unit id="487" resname="IDS_ROLLUP_TOTAL_SCORE">
+        <source>Score total</source>
+      </trans-unit>
+      <trans-unit id="488" resname="IDS_ROLLUP_TOTAL_TOKENS">
+        <source>Total de jetons</source>
+      </trans-unit>
+      <trans-unit id="489" resname="IDS_ROLLUP_TOTAL_XP">
+        <source>Total XP</source>
+      </trans-unit>
+      <trans-unit id="490" resname="IDS_SAVE_BUTTON">
+        <source>SAUVEGARDER</source>
+      </trans-unit>
+      <trans-unit id="491" resname="IDS_SELECT_BUY_ENOUGH_CASH">
+        <source>Vous n'avez pas assez d'argent pour construire sur vos propriétés.</source>
+      </trans-unit>
+      <trans-unit id="492" resname="IDS_SELECT_BUY_HOTELS_UNAVAILABLE">
+        <source>Aucun hôtel à construire disponible.</source>
+      </trans-unit>
+      <trans-unit id="493" resname="IDS_SELECT_BUY_HOUSES_UNAVAILABLE">
+        <source>Aucune maison à construire disponible.</source>
+      </trans-unit>
+      <trans-unit id="494" resname="IDS_SELECT_BUY_NONE">
+        <source>Vous n'avez aucune propriété où construire.</source>
+      </trans-unit>
+      <trans-unit id="495" resname="IDS_SELECT_MORTGAGE_NONE">
+        <source>Vous n'avez aucune propriété à hypothéquer.</source>
+      </trans-unit>
+      <trans-unit id="496" resname="IDS_SELECT_SELL_NONE">
+        <source>Vous n'avez pas de maisons ou d'hôtels à vendre.</source>
+      </trans-unit>
+      <trans-unit id="497" resname="IDS_SELECT_SELL_TO_MANY_HOUSES">
+        <source>Vous avez trop de maisons. Sélectionnez une propriété sur laquelle vendre une maison.</source>
+      </trans-unit>
+      <trans-unit id="498" resname="IDS_SELECT_TEXT">
+        <source>Déplacez la souris sur une propriété qui clignote.</source>
+      </trans-unit>
+      <trans-unit id="499" resname="IDS_SELECT_UNMORTGAGE_ENOUGH_CASH">
+        <source>Vous n'avez pas assez d'argent pour lever l'hypothèque.</source>
+      </trans-unit>
+      <trans-unit id="500" resname="IDS_SELECT_UNMORTGAGE_NONE">
+        <source>Vous n'avez pas de propriétés sur lesquelles lever l'hypothèque.</source>
+      </trans-unit>
+      <trans-unit id="501" resname="IDS_SELL_BUTTON">
+        <source>VENDRE</source>
+      </trans-unit>
+      <trans-unit id="502" resname="IDS_SELL_DIALOG_MSG">
+        <source>Cliquez sur la propriété où vous voulez vendre des bâtiments</source>
+      </trans-unit>
+      <trans-unit id="503" resname="IDS_SELL_DIALOG_TITLE">
+        <source>VENDRE</source>
+      </trans-unit>
+      <trans-unit id="504" resname="IDS_SOUND_OFF">
+        <source>SON&#13;DÉSACTIVÉ</source>
+      </trans-unit>
+      <trans-unit id="505" resname="IDS_SOUND_ON">
+        <source>SON&#13;ACTIVÉ</source>
+      </trans-unit>
+      <trans-unit id="506" resname="IDS_START_MSG">
+        <source>%(1) commence en premier.</source>
+      </trans-unit>
+      <trans-unit id="507" resname="IDS_STR_TRADE_REFUSE">
+        <source>%(1) a refusé l'échange avec </source>
+      </trans-unit>
+      <trans-unit id="508" resname="IDS_SUMMARY_ASSETS_TITLE">
+        <source>PATRIMOINE TOTAL :</source>
+      </trans-unit>
+      <trans-unit id="509" resname="IDS_SUMMARY_BUTTON">
+        <source>RÉSUMÉ</source>
+      </trans-unit>
+      <trans-unit id="510" resname="IDS_SUMMARY_CASH_TITLE">
+        <source>ARGENT TOTAL :</source>
+      </trans-unit>
+      <trans-unit id="511" resname="IDS_SUMMARY_LOSING">
+        <source>%(1) a gagné. Vous ferez mieux la prochaine fois.</source>
+      </trans-unit>
+      <trans-unit id="512" resname="IDS_SUMMARY_TITLE">
+        <source>GAME OVER !</source>
+      </trans-unit>
+      <trans-unit id="513" resname="IDS_SUMMARY_WINNING">
+        <source>Félicitations ! %(1), vous avez gagné !</source>
+      </trans-unit>
+      <trans-unit id="514" resname="IDS_TOKEN_NAME_CAR">
+        <source>Voiture de course</source>
+      </trans-unit>
+      <trans-unit id="515" resname="IDS_TOKEN_NAME_DOG">
+        <source>Chien</source>
+      </trans-unit>
+      <trans-unit id="516" resname="IDS_TOKEN_NAME_IRON">
+        <source>Fer</source>
+      </trans-unit>
+      <trans-unit id="517" resname="IDS_TOKEN_NAME_NASCAR">
+        <source>Nascar</source>
+      </trans-unit>
+      <trans-unit id="518" resname="IDS_TOKEN_NAME_SHIP">
+        <source>Cuirassé</source>
+      </trans-unit>
+      <trans-unit id="519" resname="IDS_TOKEN_NAME_SHOE">
+        <source>Chaussure</source>
+      </trans-unit>
+      <trans-unit id="520" resname="IDS_TOKEN_NAME_SUMO">
+        <source>Sumo</source>
+      </trans-unit>
+      <trans-unit id="521" resname="IDS_TOKEN_NAME_THIMBLE">
+        <source>Dé à coudre</source>
+      </trans-unit>
+      <trans-unit id="522" resname="IDS_TOKEN_NAME_TOPHAT">
+        <source>Chapeau</source>
+      </trans-unit>
+      <trans-unit id="523" resname="IDS_TOKEN_NAME_WHEELBARROW">
+        <source>Brouette</source>
+      </trans-unit>
+      <trans-unit id="524" resname="IDS_TOKENSELECTION_CLUB_TITLE">
+        <source>PIONS CLUB POGO UNIQUEMENT</source>
+      </trans-unit>
+      <trans-unit id="525" resname="IDS_TOKENSELECTION_FREE_TITLE">
+        <source>PIONS GRATUITS</source>
+      </trans-unit>
+      <trans-unit id="526" resname="IDS_TOKENSELECTION_TITLE">
+        <source>CHOISISSEZ UN PION</source>
+      </trans-unit>
+      <trans-unit id="527" resname="IDS_TRADE_ACCEPTED">
+        <source>%(1) a accepté la proposition d'échange.</source>
+      </trans-unit>
+      <trans-unit id="528" resname="IDS_TRADE_BUTTON">
+        <source>ÉCHANGE</source>
+      </trans-unit>
+      <trans-unit id="529" resname="IDS_TRADE_FINAL">
+        <source>%(1) et </source>
+      </trans-unit>
+      <trans-unit id="530" resname="IDS_TRADE_MORTGAGED_WARNING">
+        <source>, vous avez acquis une propriété hypothéquée. Vous devez payer 10 % pour toutes les propriétés acquises encore hypothéquées. Vous paierez à nouveau 10 % quand l'hypothèque sera levée.</source>
+      </trans-unit>
+      <trans-unit id="531" resname="IDS_TRADE_PROPERTY_SEPERATOR">
+        <source>, </source>
+      </trans-unit>
+      <trans-unit id="532" resname="IDS_TRADE_REJECTED">
+        <source>%(1) a refusé la proposition d'échange.</source>
+      </trans-unit>
+      <trans-unit id="533" resname="IDS_UNKNOWN">
+        <source>(Texte manquant)</source>
+      </trans-unit>
+      <trans-unit id="534" resname="IDS_UNMORTGAGE_BUTTON">
+        <source>LEVER L'HYPOTHÈQUE</source>
+      </trans-unit>
+      <trans-unit id="535" resname="IDS_UNMORTGAGE_DIALOG_MSG">
+        <source>Cliquez sur la propriété dont vous voulez lever l'hypothèque.</source>
+      </trans-unit>
+      <trans-unit id="536" resname="IDS_UNMORTGAGE_DIALOG_TITLE">
+        <source>LEVER L'HYPOTHÈQUE</source>
+      </trans-unit>	  
+	  <trans-unit id="537" resname="IDS_PROPERTYBOARD_PURPLE_1_LINE1">
+        <source>BOULEVARD</source>
+      </trans-unit>
+	  <trans-unit id="538" resname="IDS_PROPERTYBOARD_PURPLE_1_LINE2">
+        <source>DE</source>
+      </trans-unit>
+	  <trans-unit id="539" resname="IDS_PROPERTYBOARD_PURPLE_1_LINE3">
+        <source>BELLEVILLE</source>
+      </trans-unit>
+	  <trans-unit id="540" resname="IDS_PROPERTYBOARD_PURPLE_2_LINE1">
+        <source>RUE</source>
+      </trans-unit>
+	  <trans-unit id="541" resname="IDS_PROPERTYBOARD_PURPLE_2_LINE2">
+        <source>LECOURBE</source>
+      </trans-unit>
+	  <trans-unit id="542" resname="IDS_PROPERTYBOARD_PURPLE_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="543" resname="IDS_PROPERTYBOARD_LIGHTBLUE_1_LINE1">
+        <source>RUE DE</source>
+      </trans-unit>
+	  <trans-unit id="544" resname="IDS_PROPERTYBOARD_LIGHTBLUE_1_LINE2">
+        <source>VAUGIRARD</source>
+      </trans-unit>
+	  <trans-unit id="545" resname="IDS_PROPERTYBOARD_LIGHTBLUE_1_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="546" resname="IDS_PROPERTYBOARD_LIGHTBLUE_2_LINE1">
+        <source>RUE DE</source>
+      </trans-unit>
+	  <trans-unit id="547" resname="IDS_PROPERTYBOARD_LIGHTBLUE_2_LINE2">
+        <source>COURCELLES</source>
+      </trans-unit>
+	  <trans-unit id="548" resname="IDS_PROPERTYBOARD_LIGHTBLUE_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="549" resname="IDS_PROPERTYBOARD_LIGHTBLUE_3_LINE1">
+        <source>AVENUE</source>
+      </trans-unit>
+	  <trans-unit id="550" resname="IDS_PROPERTYBOARD_LIGHTBLUE_3_LINE2">
+        <source>DE</source>
+      </trans-unit>
+	  <trans-unit id="551" resname="IDS_PROPERTYBOARD_LIGHTBLUE_3_LINE3">
+        <source>LA RÉPUBLIQUE</source>
+      </trans-unit>
+	  <trans-unit id="552" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_1_LINE1">
+        <source>BOULEVARD</source>
+      </trans-unit>
+	  <trans-unit id="553" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_1_LINE2">
+        <source>DE</source>
+      </trans-unit>
+	  <trans-unit id="554" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_1_LINE3">
+        <source>LA VILLETTE</source>
+      </trans-unit>
+	  <trans-unit id="555" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_2_LINE1">
+        <source>AVENUE</source>
+      </trans-unit>
+	  <trans-unit id="556" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_2_LINE2">
+        <source>DE NEUILLY</source>
+      </trans-unit>
+	  <trans-unit id="557" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="558" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_3_LINE1">
+        <source>RUE DE</source>
+      </trans-unit>
+	  <trans-unit id="559" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_3_LINE2">
+        <source>PARADIS</source>
+      </trans-unit>
+	  <trans-unit id="560" resname="IDS_PROPERTYBOARD_LIGHTPURPLE_3_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="561" resname="IDS_PROPERTYBOARD_ORANGE_1_LINE1">
+        <source>AVENUE</source>
+      </trans-unit>
+	  <trans-unit id="562" resname="IDS_PROPERTYBOARD_ORANGE_1_LINE2">
+        <source>MOZART</source>
+      </trans-unit>
+	  <trans-unit id="563" resname="IDS_PROPERTYBOARD_ORANGE_1_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="564" resname="IDS_PROPERTYBOARD_ORANGE_2_LINE1">
+        <source>BOULEVARD</source>
+      </trans-unit>
+	  <trans-unit id="565" resname="IDS_PROPERTYBOARD_ORANGE_2_LINE2">
+        <source>SAINT-MICHEL</source>
+      </trans-unit>
+	  <trans-unit id="566" resname="IDS_PROPERTYBOARD_ORANGE_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="567" resname="IDS_PROPERTYBOARD_ORANGE_3_LINE1">
+        <source>PLACE</source>
+      </trans-unit>
+	  <trans-unit id="568" resname="IDS_PROPERTYBOARD_ORANGE_3_LINE2">
+        <source>PIGALLE</source>
+      </trans-unit>
+	  <trans-unit id="569" resname="IDS_PROPERTYBOARD_ORANGE_3_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="570" resname="IDS_PROPERTYBOARD_RED_1_LINE1">
+        <source>AVENUE</source>
+      </trans-unit>
+	  <trans-unit id="571" resname="IDS_PROPERTYBOARD_RED_1_LINE2">
+        <source>MATIGNON</source>
+      </trans-unit>
+	  <trans-unit id="572" resname="IDS_PROPERTYBOARD_RED_1_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="573" resname="IDS_PROPERTYBOARD_RED_2_LINE1">
+        <source>BOULEVARD</source>
+      </trans-unit>
+	  <trans-unit id="574" resname="IDS_PROPERTYBOARD_RED_2_LINE2">
+        <source>MALESHERBES</source>
+      </trans-unit>
+	  <trans-unit id="575" resname="IDS_PROPERTYBOARD_RED_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="576" resname="IDS_PROPERTYBOARD_RED_3_LINE1">
+        <source>AVENUE</source>
+      </trans-unit>
+	  <trans-unit id="577" resname="IDS_PROPERTYBOARD_RED_3_LINE2">
+        <source>HENRI-MARTIN</source>
+      </trans-unit>
+	  <trans-unit id="578" resname="IDS_PROPERTYBOARD_RED_3_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="579" resname="IDS_PROPERTYBOARD_YELLOW_1_LINE1">
+        <source>FAUBOURG</source>
+      </trans-unit>
+	  <trans-unit id="580" resname="IDS_PROPERTYBOARD_YELLOW_1_LINE2">
+        <source>SAINT-HONORÉ</source>
+      </trans-unit>
+	  <trans-unit id="581" resname="IDS_PROPERTYBOARD_YELLOW_1_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="582" resname="IDS_PROPERTYBOARD_YELLOW_2_LINE1">
+        <source>PLACE DE</source>
+      </trans-unit>
+	  <trans-unit id="583" resname="IDS_PROPERTYBOARD_YELLOW_2_LINE2">
+        <source>LA BOURSE</source>
+      </trans-unit>
+	  <trans-unit id="584" resname="IDS_PROPERTYBOARD_YELLOW_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="585" resname="IDS_PROPERTYBOARD_YELLOW_3_LINE1">
+        <source>RUE LA</source>
+      </trans-unit>
+	  <trans-unit id="586" resname="IDS_PROPERTYBOARD_YELLOW_3_LINE2">
+        <source>FAYETTE</source>
+      </trans-unit>
+	  <trans-unit id="587" resname="IDS_PROPERTYBOARD_YELLOW_3_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="588" resname="IDS_PROPERTYBOARD_GREEN_1_LINE1">
+        <source>AVENUE</source>
+      </trans-unit>
+	  <trans-unit id="589" resname="IDS_PROPERTYBOARD_GREEN_1_LINE2">
+        <source>DE BRETEUIL</source>
+      </trans-unit>
+	  <trans-unit id="590" resname="IDS_PROPERTYBOARD_GREEN_1_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="591" resname="IDS_PROPERTYBOARD_GREEN_2_LINE1">
+        <source>AVENUE</source>
+      </trans-unit>
+	  <trans-unit id="592" resname="IDS_PROPERTYBOARD_GREEN_2_LINE2">
+        <source>FOCH</source>
+      </trans-unit>
+	  <trans-unit id="593" resname="IDS_PROPERTYBOARD_GREEN_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="594" resname="IDS_PROPERTYBOARD_GREEN_3_LINE1">
+        <source>BOULEVARD</source>
+      </trans-unit>
+	  <trans-unit id="595" resname="IDS_PROPERTYBOARD_GREEN_3_LINE2">
+        <source>DES</source>
+      </trans-unit>
+	  <trans-unit id="596" resname="IDS_PROPERTYBOARD_GREEN_3_LINE3">
+        <source>CAPUCINES</source>
+      </trans-unit>
+	  <trans-unit id="597" resname="IDS_PROPERTYBOARD_DARKBLUE_1_LINE1">
+        <source>AVENUE DES</source>
+      </trans-unit>
+	  <trans-unit id="598" resname="IDS_PROPERTYBOARD_DARKBLUE_1_LINE2">
+        <source>CHAMPS-</source>
+      </trans-unit>
+	  <trans-unit id="599" resname="IDS_PROPERTYBOARD_DARKBLUE_1_LINE3">
+        <source>ÉLYSÉES</source>
+      </trans-unit>
+	  <trans-unit id="600" resname="IDS_PROPERTYBOARD_DARKBLUE_2_LINE1">
+        <source>RUE DE</source>
+      </trans-unit>
+	  <trans-unit id="601" resname="IDS_PROPERTYBOARD_DARKBLUE_2_LINE2">
+        <source>LA PAIX</source>
+      </trans-unit>
+	  <trans-unit id="602" resname="IDS_PROPERTYBOARD_DARKBLUE_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>  
+	  <trans-unit id="603" resname="IDS_PROPERTYBOARD_RAILROAD_1_LINE1">
+        <source>GARE</source>
+      </trans-unit>
+	  <trans-unit id="604" resname="IDS_PROPERTYBOARD_RAILROAD_1_LINE2">
+        <source>MONTPARNASSE</source>
+      </trans-unit>
+	  <trans-unit id="605" resname="IDS_PROPERTYBOARD_RAILROAD_1_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="606" resname="IDS_PROPERTYBOARD_RAILROAD_2_LINE1">
+        <source>GARE</source>
+      </trans-unit>
+	  <trans-unit id="607" resname="IDS_PROPERTYBOARD_RAILROAD_2_LINE2">
+        <source>DE LYON</source>
+      </trans-unit>
+	  <trans-unit id="608" resname="IDS_PROPERTYBOARD_RAILROAD_2_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="609" resname="IDS_PROPERTYBOARD_RAILROAD_3_LINE1">
+        <source>GARE</source>
+      </trans-unit>
+	  <trans-unit id="610" resname="IDS_PROPERTYBOARD_RAILROAD_3_LINE2">
+        <source>DU NORD</source>
+      </trans-unit>
+	  <trans-unit id="611" resname="IDS_PROPERTYBOARD_RAILROAD_3_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="612" resname="IDS_PROPERTYBOARD_RAILROAD_4_LINE1">
+        <source>GARE</source>
+      </trans-unit>
+	  <trans-unit id="613" resname="IDS_PROPERTYBOARD_RAILROAD_4_LINE2">
+        <source>SAINT-LAZARE</source>
+      </trans-unit>
+	  <trans-unit id="614" resname="IDS_PROPERTYBOARD_RAILROAD_4_LINE3">
+        <source>&nbsp;</source>
+      </trans-unit>
+	  <trans-unit id="615" resname="IDS_PROPERTYBOARD_GO_LINE1">
+        <source>DÉPART</source>
+      </trans-unit>
+	  <trans-unit id="616" resname="IDS_PROPERTYBOARD_GO_LINE2">
+        <source>RECEVEZ 200 $&#13;CHAQUE FOIS QUE&#13;VOUS PASSEZ ICI.</source>
+      </trans-unit>
+	  <trans-unit id="617" resname="IDS_ROLL_DICE">
+        <source>JETER LES DÉS</source>
+      </trans-unit>
+	  <trans-unit id="618" resname="IDS_END_TURN">
+        <source>FINIR TOUR</source>
+      </trans-unit>
+	  <trans-unit id="619" resname="IDS_LOADING_TXT">
+        <source>Chargement...</source>
+      </trans-unit>
+	  <trans-unit id="620" resname="IDS_GUEST_TXT">
+        <source>Hôte</source>
+      </trans-unit>
+	  <trans-unit id="621" resname="IDS_SCORE_TITLE_TXT">
+        <source>Votre score :</source>
+      </trans-unit>
+	  <trans-unit id="622" resname="IDS_TOKEN_TITLE_TXT">
+        <source>Jetons :</source>
+      </trans-unit>
+	  <trans-unit id="623" resname="IDS_PLAY_AGAIN_TXT">
+        <source>REJOUER</source>
+      </trans-unit>
+	  <trans-unit id="-" resname="IDS_BUTTON_GOTOPOGO">
+        <source>GO TO POGO</source>
+      </trans-unit>
+	  <trans-unit id="-" resname="IDS_BUTTON_KEEPPLAYING">
+        <source>KEEP PLAYING</source>
+      </trans-unit> 
+	  <trans-unit id="-" resname="IDS_SUMMARY_HEADER_TXT">
+        <source>Please take a moment to review the game summary</source>
+      </trans-unit>
+	  <trans-unit id="622" resname="IDS_INTERMISSION_HEADER_TXT">
+        <source>Continue.</source>
+      </trans-unit>
+    </body>
+  </file>
+
+</xliff>

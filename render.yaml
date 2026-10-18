@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: monopoly-online
+    runtime: node
+    plan: free
+    buildCommand: "echo no build needed"
+    startCommand: npm start

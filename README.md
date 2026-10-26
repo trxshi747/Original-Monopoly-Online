@@ -51,11 +51,11 @@ Needs Java. FFDec is in `tools/ffdec`. Patch scripts: `build/patch_game.js`,
 The room must already exist and be started (use the lobby or the /api/join + /api/start calls).
 Add `rejoin=1` to replay as a returning player. Optional scenario parameters, applied identically on every client:
 `dbgown=0:1,3;1:6,8,9` (seat:properties), `dbgcash=0:1500;1:10` (seat:cash),
-`dbgrolls=J,7,4` (scripted dice sums; `J` = go to jail). Ignored when absent.
+`dbgmort=0:21,23` (seat:properties that start mortgaged), `dbgrolls=J,7,4` (scripted dice sums; `J` = go to jail). Ignored when absent.
 
 ## Known limits
 
-* Reconnect: if a player refreshes or drops, they open the same site and press **Rejoin game** (their browser remembers the room and seat). Their client replays the whole game from the server log (it takes a bit), then hands control back. Rooms are kept in server memory for 6 hours; restarting the server loses running games.
+* Reconnect: if a player refreshes or drops, they open the same site and press **Rejoin game** (their browser remembers the room and seat). Their client silently fast-forwards the game from the server log behind a "Reconnexion… N%" cover (sound muted, clock and frame rate sped up, intro dialog auto-closed), then removes the cover and hands control back at the live state. Rooms are kept in server memory for 6 hours; restarting the server loses running games.
 * The end-of-game screen is a simple "<name> wins the game!" dialog (the original needs Pogo files that are not part of the game).
 * 5–6 players hide the "History" side panel to make room for the extra panels.
 * Players choose a token in the lobby; the in-game token picker is skipped.

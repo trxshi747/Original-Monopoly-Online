@@ -8,7 +8,7 @@
   :root { --bg:#0f2a24; --card:#16382f; --ink:#f3efe0; --muted:#9fb8ae; --accent:#e8b923; --bad:#ff8a7a; }
   * { box-sizing:border-box; }
   body { margin:0; min-height:100vh; background:var(--bg); color:var(--ink); font:16px/1.4 system-ui,Segoe UI,Arial,sans-serif; display:flex; align-items:center; justify-content:center; }
-  #game { position:fixed; inset:0; background:#000; display:none; }
+  #game { position:fixed; inset:0; background:#000; display:none; touch-action:none; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -webkit-tap-highlight-color:transparent; overscroll-behavior:none; }
   #lobby { width:min(440px,92vw); background:var(--card); border-radius:14px; padding:28px; box-shadow:0 10px 40px #0008; }
   h1 { margin:0 0 4px; font-size:28px; letter-spacing:.5px; color:var(--accent); }
   p.sub { margin:0 0 20px; color:var(--muted); }
@@ -142,6 +142,7 @@ function launch(v, rejoin) {
   $('lobby').classList.add('hidden');
   const g = $('game');
   g.style.display = 'block';
+  g.addEventListener('contextmenu', (e) => e.preventDefault());
   const player = window.RufflePlayer.newest().createPlayer();
   player.style.width = '100%';
   player.style.height = '100%';
@@ -153,6 +154,7 @@ function launch(v, rejoin) {
     scale: 'showAll',
     forceScale: true,
     letterbox: 'on',
+    contextMenu: 'off',
     unmuteOverlay: 'hidden',
     parameters: {
       room: room,

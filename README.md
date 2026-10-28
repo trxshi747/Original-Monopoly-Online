@@ -56,6 +56,7 @@ Add `rejoin=1` to replay as a returning player. Optional scenario parameters, ap
 ## Known limits
 
 * Reconnect: if a player refreshes or drops, they open the same site and press **Rejoin game** (their browser remembers the room and seat). Their client silently fast-forwards the game from the server log behind a "Reconnexion… N%" cover (sound muted, clock and frame rate sped up, intro dialog auto-closed), then removes the cover and hands control back at the live state. Rooms are kept in server memory for 6 hours; restarting the server loses running games.
+* Stuck bankruptcy dialog: if a player is out of cash and the others keep seeing the "you owe more than you have" dialog, the host (seat 0) gets a "Forcer la faillite (hôte)" button on that dialog after 12 seconds. It broadcasts a force message and every client still stuck on that dialog declares the bankruptcy.
 * The end-of-game screen is a simple "<name> wins the game!" dialog (the original needs Pogo files that are not part of the game).
 * 5–6 players hide the "History" side panel to make room for the extra panels.
 * Players choose a token in the lobby; the in-game token picker is skipped.

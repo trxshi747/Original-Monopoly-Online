@@ -4,6 +4,11 @@
 
 **EA's Monopoly Classic turned into an online game: a deterministic lockstep simulation running in every browser through Ruffle, a tiny zero-dependency Node relay, a lobby where each player picks a name and a token, and automatic rejoin after a refresh.**
 
+<p align="center">
+  <strong>Live Application:</strong> <a href="https://monopoly-r2af.onrender.com/">https://monopoly-r2af.onrender.com/</a>
+</p>
+
+[![Live App](https://img.shields.io/badge/Live_App-monopoly--r2af.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://monopoly-r2af.onrender.com/)
 [![Repository](https://img.shields.io/badge/GitHub-trxshi747%2FOriginal--Monopoly--Online-181717?style=for-the-badge&logo=github)](https://github.com/trxshi747/Original-Monopoly-Online)
 [![Node.js](https://img.shields.io/badge/Node.js_18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Ruffle](https://img.shields.io/badge/Ruffle-Flash_Emulator-F58025?style=for-the-badge&logo=adobeflash&logoColor=white)](https://ruffle.rs/)
@@ -15,7 +20,9 @@
 <br />
 
 <p align="center">
+  <a href="https://monopoly-r2af.onrender.com/">Live App</a> •
   <a href="#overview">Overview</a> •
+  <a href="#screenshots">Screenshots</a> •
   <a href="#features">Features</a> •
   <a href="#system-architecture">Architecture</a> •
   <a href="#tech-stack">Tech Stack</a> •
@@ -39,6 +46,30 @@
 Players open the site, type their own name, choose a token, join a room with a short code and the host presses **Start game**. From that point the server only relays moves: every browser runs the complete game, and the game is deterministic, so everyone sees exactly the same board, dice, cards and auctions.
 
 Up to **6 players** can share a room. A player who refreshes the page or loses the connection can rejoin their seat and is fast-forwarded to the live state without watching the whole game again.
+
+---
+
+## Screenshots
+
+<div align="center">
+
+<img src="docs/screenshots/board.jpg" alt="The board with two players, their properties and the roll dice dialog" width="720" />
+
+*The board in a live room: each player has a name, a token and their own properties, and the active player gets the roll dialog.*
+
+<br /><br />
+
+<img src="docs/screenshots/trade.jpg" alt="The trade window with properties selected on both sides" width="720" />
+
+*The trade window: properties are picked on both sides and the cash arrows repeat and accelerate while held, which makes it usable on a phone.*
+
+<br /><br />
+
+<img src="docs/screenshots/six-players.jpg" alt="A six player game with one panel per player" width="720" />
+
+*Six players in the same room, with one panel per player showing cash and property cards.*
+
+</div>
 
 ---
 
@@ -153,7 +184,7 @@ node server/server.js
 
 ## Deployment
 
-On [Render](https://render.com/): create a **Web Service** from the Git repository, leave the build command empty and use `npm start` as the start command. `render.yaml` already describes the service. Share the URL Render gives you with your friends.
+On [Render](https://render.com/): create a **Web Service** from the Git repository, leave the build command empty and use `npm start` as the start command. `render.yaml` already describes the service. The production instance of this project runs at [https://monopoly-r2af.onrender.com/](https://monopoly-r2af.onrender.com/); share the URL Render gives you with your friends.
 
 - Free instances sleep when idle, so the first load can take around 30 seconds.
 - Any push to the production branch triggers a new deployment.

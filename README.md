@@ -53,19 +53,19 @@ Up to **6 players** can share a room. A player who refreshes the page or loses t
 
 <div align="center">
 
-<img src="docs/screenshots/board.jpg" alt="The board with two players, their properties and the roll dice dialog" width="720" />
+<img src="docs/screenshots/board.png" alt="The board with two players, their properties and the roll dice dialog" width="900" />
 
 *The board in a live room: each player has a name, a token and their own properties, and the active player gets the roll dialog.*
 
 <br /><br />
 
-<img src="docs/screenshots/trade.jpg" alt="The trade window with properties selected on both sides" width="720" />
+<img src="docs/screenshots/trade.png" alt="The trade window with properties selected on both sides" width="900" />
 
 *The trade window: properties are picked on both sides and the cash arrows repeat and accelerate while held, which makes it usable on a phone.*
 
 <br /><br />
 
-<img src="docs/screenshots/six-players.jpg" alt="A six player game with one panel per player" width="720" />
+<img src="docs/screenshots/six-players.png" alt="A six player game with one panel per player" width="900" />
 
 *Six players in the same room, with one panel per player showing cash and property cards.*
 
